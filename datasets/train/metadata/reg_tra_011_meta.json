@@ -1,0 +1,20 @@
+{
+  "generation_id": "318b04f7",
+  "timestamp": "2026-09-28 06:02:04 UTC",
+  "domain": "Regular Out-of-Domain",
+  "operation": "doc_splice",
+  "intensity": 0.85,
+  "description": "Spliced Red Security Stamp & Typography Tamper (Intensity: 85%)",
+  "seed": 2511,
+  "bounding_box": [
+    0.3477,
+    0.3477,
+    0.6484,
+    0.5469
+  ],
+  "affected_pixel_count": 3927,
+  "affected_pixel_percent": 5.99,
+  "provenance": "SYNTHETIC / RESEARCH DATA ONLY (MD-DGFLS LAB)",
+  "label": 1,
+  "is_manipulated": true
+}

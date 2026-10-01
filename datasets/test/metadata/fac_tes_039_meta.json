@@ -1,0 +1,20 @@
+{
+  "generation_id": "f34832a0",
+  "timestamp": "2026-09-28 06:02:03 UTC",
+  "domain": "Face",
+  "operation": "deage",
+  "intensity": 0.85,
+  "description": "Photorealistic Facial Rejuvenation & De-Aging Morph (Intensity: 85%)",
+  "seed": 1039,
+  "bounding_box": [
+    0.2617,
+    0.25,
+    0.7305,
+    0.7031
+  ],
+  "affected_pixel_count": 556,
+  "affected_pixel_percent": 0.85,
+  "provenance": "SYNTHETIC / RESEARCH DATA ONLY (MD-DGFLS LAB)",
+  "label": 1,
+  "is_manipulated": true
+}

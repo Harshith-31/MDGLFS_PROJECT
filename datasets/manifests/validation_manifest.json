@@ -1,0 +1,452 @@
+[
+  {
+    "id": "fac_val_028",
+    "image_path": "datasets/validation/images/fac_val_028.png",
+    "mask_path": "datasets/validation/masks/fac_val_028_mask.png",
+    "domain": "Face",
+    "domain_idx": 0,
+    "label": 0,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split": "validation"
+  },
+  {
+    "id": "fac_val_029",
+    "image_path": "datasets/validation/images/fac_val_029.png",
+    "mask_path": "datasets/validation/masks/fac_val_029_mask.png",
+    "domain": "Face",
+    "domain_idx": 0,
+    "label": 1,
+    "bbox": [
+      0.3906,
+      0.0742,
+      0.5352,
+      0.2031
+    ],
+    "split": "validation"
+  },
+  {
+    "id": "fac_val_030",
+    "image_path": "datasets/validation/images/fac_val_030.png",
+    "mask_path": "datasets/validation/masks/fac_val_030_mask.png",
+    "domain": "Face",
+    "domain_idx": 0,
+    "label": 0,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split": "validation"
+  },
+  {
+    "id": "fac_val_031",
+    "image_path": "datasets/validation/images/fac_val_031.png",
+    "mask_path": "datasets/validation/masks/fac_val_031_mask.png",
+    "domain": "Face",
+    "domain_idx": 0,
+    "label": 1,
+    "bbox": [
+      0.3906,
+      0.1094,
+      0.582,
+      0.2852
+    ],
+    "split": "validation"
+  },
+  {
+    "id": "fac_val_032",
+    "image_path": "datasets/validation/images/fac_val_032.png",
+    "mask_path": "datasets/validation/masks/fac_val_032_mask.png",
+    "domain": "Face",
+    "domain_idx": 0,
+    "label": 0,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split": "validation"
+  },
+  {
+    "id": "fac_val_033",
+    "image_path": "datasets/validation/images/fac_val_033.png",
+    "mask_path": "datasets/validation/masks/fac_val_033_mask.png",
+    "domain": "Face",
+    "domain_idx": 0,
+    "label": 1,
+    "bbox": [
+      0.2617,
+      0.25,
+      0.7305,
+      0.7031
+    ],
+    "split": "validation"
+  },
+  {
+    "id": "med_val_028",
+    "image_path": "datasets/validation/images/med_val_028.png",
+    "mask_path": "datasets/validation/masks/med_val_028_mask.png",
+    "domain": "Medical Radiograph",
+    "domain_idx": 1,
+    "label": 0,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split": "validation"
+  },
+  {
+    "id": "med_val_029",
+    "image_path": "datasets/validation/images/med_val_029.png",
+    "mask_path": "datasets/validation/masks/med_val_029_mask.png",
+    "domain": "Medical Radiograph",
+    "domain_idx": 1,
+    "label": 1,
+    "bbox": [
+      0.3438,
+      0.3828,
+      0.4922,
+      0.5312
+    ],
+    "split": "validation"
+  },
+  {
+    "id": "med_val_030",
+    "image_path": "datasets/validation/images/med_val_030.png",
+    "mask_path": "datasets/validation/masks/med_val_030_mask.png",
+    "domain": "Medical Radiograph",
+    "domain_idx": 1,
+    "label": 0,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split": "validation"
+  },
+  {
+    "id": "med_val_031",
+    "image_path": "datasets/validation/images/med_val_031.png",
+    "mask_path": "datasets/validation/masks/med_val_031_mask.png",
+    "domain": "Medical Radiograph",
+    "domain_idx": 1,
+    "label": 1,
+    "bbox": [
+      0.3438,
+      0.3828,
+      0.4922,
+      0.5312
+    ],
+    "split": "validation"
+  },
+  {
+    "id": "med_val_032",
+    "image_path": "datasets/validation/images/med_val_032.png",
+    "mask_path": "datasets/validation/masks/med_val_032_mask.png",
+    "domain": "Medical Radiograph",
+    "domain_idx": 1,
+    "label": 0,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split": "validation"
+  },
+  {
+    "id": "med_val_033",
+    "image_path": "datasets/validation/images/med_val_033.png",
+    "mask_path": "datasets/validation/masks/med_val_033_mask.png",
+    "domain": "Medical Radiograph",
+    "domain_idx": 1,
+    "label": 1,
+    "bbox": [
+      0.3438,
+      0.3828,
+      0.4922,
+      0.5312
+    ],
+    "split": "validation"
+  },
+  {
+    "id": "sat_val_028",
+    "image_path": "datasets/validation/images/sat_val_028.png",
+    "mask_path": "datasets/validation/masks/sat_val_028_mask.png",
+    "domain": "Satellite Terrain",
+    "domain_idx": 2,
+    "label": 0,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split": "validation"
+  },
+  {
+    "id": "sat_val_029",
+    "image_path": "datasets/validation/images/sat_val_029.png",
+    "mask_path": "datasets/validation/masks/sat_val_029_mask.png",
+    "domain": "Satellite Terrain",
+    "domain_idx": 2,
+    "label": 1,
+    "bbox": [
+      0.2773,
+      0.418,
+      0.7188,
+      0.5781
+    ],
+    "split": "validation"
+  },
+  {
+    "id": "sat_val_030",
+    "image_path": "datasets/validation/images/sat_val_030.png",
+    "mask_path": "datasets/validation/masks/sat_val_030_mask.png",
+    "domain": "Satellite Terrain",
+    "domain_idx": 2,
+    "label": 0,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split": "validation"
+  },
+  {
+    "id": "sat_val_031",
+    "image_path": "datasets/validation/images/sat_val_031.png",
+    "mask_path": "datasets/validation/masks/sat_val_031_mask.png",
+    "domain": "Satellite Terrain",
+    "domain_idx": 2,
+    "label": 1,
+    "bbox": [
+      0.2773,
+      0.418,
+      0.7188,
+      0.5781
+    ],
+    "split": "validation"
+  },
+  {
+    "id": "sat_val_032",
+    "image_path": "datasets/validation/images/sat_val_032.png",
+    "mask_path": "datasets/validation/masks/sat_val_032_mask.png",
+    "domain": "Satellite Terrain",
+    "domain_idx": 2,
+    "label": 0,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split": "validation"
+  },
+  {
+    "id": "sat_val_033",
+    "image_path": "datasets/validation/images/sat_val_033.png",
+    "mask_path": "datasets/validation/masks/sat_val_033_mask.png",
+    "domain": "Satellite Terrain",
+    "domain_idx": 2,
+    "label": 1,
+    "bbox": [
+      0.2773,
+      0.418,
+      0.7188,
+      0.5781
+    ],
+    "split": "validation"
+  },
+  {
+    "id": "reg_val_028",
+    "image_path": "datasets/validation/images/reg_val_028.png",
+    "mask_path": "datasets/validation/masks/reg_val_028_mask.png",
+    "domain": "Regular Out-of-Domain",
+    "domain_idx": 3,
+    "label": 0,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split": "validation"
+  },
+  {
+    "id": "reg_val_029",
+    "image_path": "datasets/validation/images/reg_val_029.png",
+    "mask_path": "datasets/validation/masks/reg_val_029_mask.png",
+    "domain": "Regular Out-of-Domain",
+    "domain_idx": 3,
+    "label": 1,
+    "bbox": [
+      0.3477,
+      0.3477,
+      0.6484,
+      0.5469
+    ],
+    "split": "validation"
+  },
+  {
+    "id": "reg_val_030",
+    "image_path": "datasets/validation/images/reg_val_030.png",
+    "mask_path": "datasets/validation/masks/reg_val_030_mask.png",
+    "domain": "Regular Out-of-Domain",
+    "domain_idx": 3,
+    "label": 0,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split": "validation"
+  },
+  {
+    "id": "reg_val_031",
+    "image_path": "datasets/validation/images/reg_val_031.png",
+    "mask_path": "datasets/validation/masks/reg_val_031_mask.png",
+    "domain": "Regular Out-of-Domain",
+    "domain_idx": 3,
+    "label": 1,
+    "bbox": [
+      0.3477,
+      0.3477,
+      0.6484,
+      0.5469
+    ],
+    "split": "validation"
+  },
+  {
+    "id": "reg_val_032",
+    "image_path": "datasets/validation/images/reg_val_032.png",
+    "mask_path": "datasets/validation/masks/reg_val_032_mask.png",
+    "domain": "Regular Out-of-Domain",
+    "domain_idx": 3,
+    "label": 0,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split": "validation"
+  },
+  {
+    "id": "reg_val_033",
+    "image_path": "datasets/validation/images/reg_val_033.png",
+    "mask_path": "datasets/validation/masks/reg_val_033_mask.png",
+    "domain": "Regular Out-of-Domain",
+    "domain_idx": 3,
+    "label": 1,
+    "bbox": [
+      0.3477,
+      0.3477,
+      0.6484,
+      0.5469
+    ],
+    "split": "validation"
+  },
+  {
+    "id": "nat_val_028",
+    "image_path": "datasets/validation/images/nat_val_028.png",
+    "mask_path": "datasets/validation/masks/nat_val_028_mask.png",
+    "domain": "Natural Scene",
+    "domain_idx": 4,
+    "label": 0,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split": "validation"
+  },
+  {
+    "id": "nat_val_029",
+    "image_path": "datasets/validation/images/nat_val_029.png",
+    "mask_path": "datasets/validation/masks/nat_val_029_mask.png",
+    "domain": "Natural Scene",
+    "domain_idx": 4,
+    "label": 1,
+    "bbox": [
+      0.2969,
+      0.2969,
+      0.6484,
+      0.5977
+    ],
+    "split": "validation"
+  },
+  {
+    "id": "nat_val_030",
+    "image_path": "datasets/validation/images/nat_val_030.png",
+    "mask_path": "datasets/validation/masks/nat_val_030_mask.png",
+    "domain": "Natural Scene",
+    "domain_idx": 4,
+    "label": 0,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split": "validation"
+  },
+  {
+    "id": "nat_val_031",
+    "image_path": "datasets/validation/images/nat_val_031.png",
+    "mask_path": "datasets/validation/masks/nat_val_031_mask.png",
+    "domain": "Natural Scene",
+    "domain_idx": 4,
+    "label": 1,
+    "bbox": [
+      0.2969,
+      0.2969,
+      0.6484,
+      0.5977
+    ],
+    "split": "validation"
+  },
+  {
+    "id": "nat_val_032",
+    "image_path": "datasets/validation/images/nat_val_032.png",
+    "mask_path": "datasets/validation/masks/nat_val_032_mask.png",
+    "domain": "Natural Scene",
+    "domain_idx": 4,
+    "label": 0,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split": "validation"
+  },
+  {
+    "id": "nat_val_033",
+    "image_path": "datasets/validation/images/nat_val_033.png",
+    "mask_path": "datasets/validation/masks/nat_val_033_mask.png",
+    "domain": "Natural Scene",
+    "domain_idx": 4,
+    "label": 1,
+    "bbox": [
+      0.2969,
+      0.2969,
+      0.6484,
+      0.5977
+    ],
+    "split": "validation"
+  }
+]

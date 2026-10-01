@@ -1,0 +1,117 @@
+{
+  "router": {
+    "model_type": "ViTRouter",
+    "checkpoint": "models/router_best.pth",
+    "trained_at": "2026-09-28T11:33:41.056622",
+    "device": "mps",
+    "parameters": 2373125,
+    "metrics": {
+      "val_loss": 0.3174,
+      "accuracy": 0.8
+    }
+  },
+  "face": {
+    "domain_name": "Face",
+    "model_type": "FaceDetector",
+    "checkpoint": "models/face_detector_best.pth",
+    "trained_at": "2026-09-28T11:36:41.922191",
+    "device": "mps",
+    "parameters": 23383745,
+    "train_samples": 28,
+    "val_samples": 6,
+    "metrics": {
+      "accuracy": 0.5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "iou": 0.0,
+      "dice": 0.0,
+      "confusion_matrix": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 3,
+        "tn": 3
+      },
+      "val_loss": 3.073,
+      "train_loss": 3.0761
+    }
+  },
+  "med": {
+    "domain_name": "Medical Radiograph",
+    "model_type": "MedDetector",
+    "checkpoint": "models/xray_detector_best.pth",
+    "trained_at": "2026-09-28T11:35:00.669995",
+    "device": "mps",
+    "parameters": 12183881,
+    "train_samples": 28,
+    "val_samples": 6,
+    "metrics": {
+      "accuracy": 0.6667,
+      "precision": 0.6,
+      "recall": 1.0,
+      "f1": 0.75,
+      "iou": 0.2354,
+      "dice": 0.2876,
+      "confusion_matrix": {
+        "tp": 3,
+        "fp": 2,
+        "fn": 0,
+        "tn": 1
+      },
+      "val_loss": 2.5328,
+      "train_loss": 2.3733
+    }
+  },
+  "sat": {
+    "domain_name": "Satellite Terrain",
+    "model_type": "SatDetector",
+    "checkpoint": "models/sat_detector_best.pth",
+    "trained_at": "2026-09-28T11:35:14.044135",
+    "device": "mps",
+    "parameters": 1696838,
+    "train_samples": 28,
+    "val_samples": 6,
+    "metrics": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "iou": 0.5002,
+      "dice": 0.5668,
+      "confusion_matrix": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "tn": 3
+      },
+      "val_loss": 2.4891,
+      "train_loss": 2.4179
+    }
+  },
+  "gen": {
+    "domain_name": "General Scene & Out-of-Domain",
+    "model_type": "GeneralDetector",
+    "checkpoint": "models/general_detector_best.pth",
+    "trained_at": "2026-09-28T11:35:29.922981",
+    "device": "mps",
+    "parameters": 5811398,
+    "train_samples": 56,
+    "val_samples": 12,
+    "metrics": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "iou": 0.92,
+      "dice": 0.9564,
+      "confusion_matrix": {
+        "tp": 6,
+        "fp": 0,
+        "fn": 0,
+        "tn": 6
+      },
+      "val_loss": 1.221,
+      "train_loss": 1.21
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "generation_id": "real_fac_tes_036",
+  "domain": "Face",
+  "operation": "authentic",
+  "label": 0,
+  "is_manipulated": false,
+  "bounding_box": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "seed": 1036,
+  "provenance": "AUTHENTIC BENCHMARK CAPTURE"
+}

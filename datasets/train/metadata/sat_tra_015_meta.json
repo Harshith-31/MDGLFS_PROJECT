@@ -1,0 +1,20 @@
+{
+  "generation_id": "0f146225",
+  "timestamp": "2026-09-28 06:02:04 UTC",
+  "domain": "Satellite Terrain",
+  "operation": "runway",
+  "intensity": 0.85,
+  "description": "Synthetic Tarmac Airfield Runway Insertion (Intensity: 85%)",
+  "seed": 2015,
+  "bounding_box": [
+    0.2773,
+    0.418,
+    0.7188,
+    0.5781
+  ],
+  "affected_pixel_count": 4633,
+  "affected_pixel_percent": 7.07,
+  "provenance": "SYNTHETIC / RESEARCH DATA ONLY (MD-DGFLS LAB)",
+  "label": 1,
+  "is_manipulated": true
+}

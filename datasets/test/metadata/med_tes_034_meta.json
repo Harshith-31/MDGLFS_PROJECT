@@ -1,0 +1,15 @@
+{
+  "generation_id": "real_med_tes_034",
+  "domain": "Medical Radiograph",
+  "operation": "authentic",
+  "label": 0,
+  "is_manipulated": false,
+  "bounding_box": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "seed": 1534,
+  "provenance": "AUTHENTIC BENCHMARK CAPTURE"
+}

@@ -1,0 +1,20 @@
+{
+  "generation_id": "7b84da8c",
+  "timestamp": "2026-09-28 06:02:04 UTC",
+  "domain": "Natural Scene",
+  "operation": "inpaint",
+  "intensity": 0.85,
+  "description": "Telea Navier-Stokes Object Removal / Inpainting (Intensity: 85%)",
+  "seed": 3007,
+  "bounding_box": [
+    0.2969,
+    0.2969,
+    0.6484,
+    0.5977
+  ],
+  "affected_pixel_count": 6930,
+  "affected_pixel_percent": 10.57,
+  "provenance": "SYNTHETIC / RESEARCH DATA ONLY (MD-DGFLS LAB)",
+  "label": 1,
+  "is_manipulated": true
+}

@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# System
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Large archive
+*.zip
+
+# Experiment outputs (except summaries per Section 5)
+results/*
+!results/**/summary.json
+!results/**/config.yaml
+
+# Temporary scratch
+.cache/

@@ -1,0 +1,20 @@
+{
+  "generation_id": "6480f71d",
+  "timestamp": "2026-09-28 06:02:04 UTC",
+  "domain": "Medical Radiograph",
+  "operation": "nodule",
+  "intensity": 0.85,
+  "description": "Synthetic Radiopaque Nodule Density Injection (r=19px, Intensity: 85%)",
+  "seed": 1531,
+  "bounding_box": [
+    0.3438,
+    0.3828,
+    0.4922,
+    0.5312
+  ],
+  "affected_pixel_count": 1129,
+  "affected_pixel_percent": 1.72,
+  "provenance": "SYNTHETIC / RESEARCH DATA ONLY (MD-DGFLS LAB)",
+  "label": 1,
+  "is_manipulated": true
+}

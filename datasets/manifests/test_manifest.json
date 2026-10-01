@@ -1,0 +1,452 @@
+[
+  {
+    "id": "fac_tes_034",
+    "image_path": "datasets/test/images/fac_tes_034.png",
+    "mask_path": "datasets/test/masks/fac_tes_034_mask.png",
+    "domain": "Face",
+    "domain_idx": 0,
+    "label": 0,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split": "test"
+  },
+  {
+    "id": "fac_tes_035",
+    "image_path": "datasets/test/images/fac_tes_035.png",
+    "mask_path": "datasets/test/masks/fac_tes_035_mask.png",
+    "domain": "Face",
+    "domain_idx": 0,
+    "label": 1,
+    "bbox": [
+      0.3906,
+      0.0742,
+      0.5352,
+      0.2031
+    ],
+    "split": "test"
+  },
+  {
+    "id": "fac_tes_036",
+    "image_path": "datasets/test/images/fac_tes_036.png",
+    "mask_path": "datasets/test/masks/fac_tes_036_mask.png",
+    "domain": "Face",
+    "domain_idx": 0,
+    "label": 0,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split": "test"
+  },
+  {
+    "id": "fac_tes_037",
+    "image_path": "datasets/test/images/fac_tes_037.png",
+    "mask_path": "datasets/test/masks/fac_tes_037_mask.png",
+    "domain": "Face",
+    "domain_idx": 0,
+    "label": 1,
+    "bbox": [
+      0.3906,
+      0.1094,
+      0.582,
+      0.2852
+    ],
+    "split": "test"
+  },
+  {
+    "id": "fac_tes_038",
+    "image_path": "datasets/test/images/fac_tes_038.png",
+    "mask_path": "datasets/test/masks/fac_tes_038_mask.png",
+    "domain": "Face",
+    "domain_idx": 0,
+    "label": 0,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split": "test"
+  },
+  {
+    "id": "fac_tes_039",
+    "image_path": "datasets/test/images/fac_tes_039.png",
+    "mask_path": "datasets/test/masks/fac_tes_039_mask.png",
+    "domain": "Face",
+    "domain_idx": 0,
+    "label": 1,
+    "bbox": [
+      0.2617,
+      0.25,
+      0.7305,
+      0.7031
+    ],
+    "split": "test"
+  },
+  {
+    "id": "med_tes_034",
+    "image_path": "datasets/test/images/med_tes_034.png",
+    "mask_path": "datasets/test/masks/med_tes_034_mask.png",
+    "domain": "Medical Radiograph",
+    "domain_idx": 1,
+    "label": 0,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split": "test"
+  },
+  {
+    "id": "med_tes_035",
+    "image_path": "datasets/test/images/med_tes_035.png",
+    "mask_path": "datasets/test/masks/med_tes_035_mask.png",
+    "domain": "Medical Radiograph",
+    "domain_idx": 1,
+    "label": 1,
+    "bbox": [
+      0.3438,
+      0.3828,
+      0.4922,
+      0.5312
+    ],
+    "split": "test"
+  },
+  {
+    "id": "med_tes_036",
+    "image_path": "datasets/test/images/med_tes_036.png",
+    "mask_path": "datasets/test/masks/med_tes_036_mask.png",
+    "domain": "Medical Radiograph",
+    "domain_idx": 1,
+    "label": 0,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split": "test"
+  },
+  {
+    "id": "med_tes_037",
+    "image_path": "datasets/test/images/med_tes_037.png",
+    "mask_path": "datasets/test/masks/med_tes_037_mask.png",
+    "domain": "Medical Radiograph",
+    "domain_idx": 1,
+    "label": 1,
+    "bbox": [
+      0.3438,
+      0.3828,
+      0.4922,
+      0.5312
+    ],
+    "split": "test"
+  },
+  {
+    "id": "med_tes_038",
+    "image_path": "datasets/test/images/med_tes_038.png",
+    "mask_path": "datasets/test/masks/med_tes_038_mask.png",
+    "domain": "Medical Radiograph",
+    "domain_idx": 1,
+    "label": 0,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split": "test"
+  },
+  {
+    "id": "med_tes_039",
+    "image_path": "datasets/test/images/med_tes_039.png",
+    "mask_path": "datasets/test/masks/med_tes_039_mask.png",
+    "domain": "Medical Radiograph",
+    "domain_idx": 1,
+    "label": 1,
+    "bbox": [
+      0.3438,
+      0.3828,
+      0.4922,
+      0.5312
+    ],
+    "split": "test"
+  },
+  {
+    "id": "sat_tes_034",
+    "image_path": "datasets/test/images/sat_tes_034.png",
+    "mask_path": "datasets/test/masks/sat_tes_034_mask.png",
+    "domain": "Satellite Terrain",
+    "domain_idx": 2,
+    "label": 0,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split": "test"
+  },
+  {
+    "id": "sat_tes_035",
+    "image_path": "datasets/test/images/sat_tes_035.png",
+    "mask_path": "datasets/test/masks/sat_tes_035_mask.png",
+    "domain": "Satellite Terrain",
+    "domain_idx": 2,
+    "label": 1,
+    "bbox": [
+      0.2773,
+      0.418,
+      0.7188,
+      0.5781
+    ],
+    "split": "test"
+  },
+  {
+    "id": "sat_tes_036",
+    "image_path": "datasets/test/images/sat_tes_036.png",
+    "mask_path": "datasets/test/masks/sat_tes_036_mask.png",
+    "domain": "Satellite Terrain",
+    "domain_idx": 2,
+    "label": 0,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split": "test"
+  },
+  {
+    "id": "sat_tes_037",
+    "image_path": "datasets/test/images/sat_tes_037.png",
+    "mask_path": "datasets/test/masks/sat_tes_037_mask.png",
+    "domain": "Satellite Terrain",
+    "domain_idx": 2,
+    "label": 1,
+    "bbox": [
+      0.2773,
+      0.418,
+      0.7188,
+      0.5781
+    ],
+    "split": "test"
+  },
+  {
+    "id": "sat_tes_038",
+    "image_path": "datasets/test/images/sat_tes_038.png",
+    "mask_path": "datasets/test/masks/sat_tes_038_mask.png",
+    "domain": "Satellite Terrain",
+    "domain_idx": 2,
+    "label": 0,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split": "test"
+  },
+  {
+    "id": "sat_tes_039",
+    "image_path": "datasets/test/images/sat_tes_039.png",
+    "mask_path": "datasets/test/masks/sat_tes_039_mask.png",
+    "domain": "Satellite Terrain",
+    "domain_idx": 2,
+    "label": 1,
+    "bbox": [
+      0.2773,
+      0.418,
+      0.7188,
+      0.5781
+    ],
+    "split": "test"
+  },
+  {
+    "id": "reg_tes_034",
+    "image_path": "datasets/test/images/reg_tes_034.png",
+    "mask_path": "datasets/test/masks/reg_tes_034_mask.png",
+    "domain": "Regular Out-of-Domain",
+    "domain_idx": 3,
+    "label": 0,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split": "test"
+  },
+  {
+    "id": "reg_tes_035",
+    "image_path": "datasets/test/images/reg_tes_035.png",
+    "mask_path": "datasets/test/masks/reg_tes_035_mask.png",
+    "domain": "Regular Out-of-Domain",
+    "domain_idx": 3,
+    "label": 1,
+    "bbox": [
+      0.3477,
+      0.3477,
+      0.6484,
+      0.5469
+    ],
+    "split": "test"
+  },
+  {
+    "id": "reg_tes_036",
+    "image_path": "datasets/test/images/reg_tes_036.png",
+    "mask_path": "datasets/test/masks/reg_tes_036_mask.png",
+    "domain": "Regular Out-of-Domain",
+    "domain_idx": 3,
+    "label": 0,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split": "test"
+  },
+  {
+    "id": "reg_tes_037",
+    "image_path": "datasets/test/images/reg_tes_037.png",
+    "mask_path": "datasets/test/masks/reg_tes_037_mask.png",
+    "domain": "Regular Out-of-Domain",
+    "domain_idx": 3,
+    "label": 1,
+    "bbox": [
+      0.3477,
+      0.3477,
+      0.6484,
+      0.5469
+    ],
+    "split": "test"
+  },
+  {
+    "id": "reg_tes_038",
+    "image_path": "datasets/test/images/reg_tes_038.png",
+    "mask_path": "datasets/test/masks/reg_tes_038_mask.png",
+    "domain": "Regular Out-of-Domain",
+    "domain_idx": 3,
+    "label": 0,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split": "test"
+  },
+  {
+    "id": "reg_tes_039",
+    "image_path": "datasets/test/images/reg_tes_039.png",
+    "mask_path": "datasets/test/masks/reg_tes_039_mask.png",
+    "domain": "Regular Out-of-Domain",
+    "domain_idx": 3,
+    "label": 1,
+    "bbox": [
+      0.3477,
+      0.3477,
+      0.6484,
+      0.5469
+    ],
+    "split": "test"
+  },
+  {
+    "id": "nat_tes_034",
+    "image_path": "datasets/test/images/nat_tes_034.png",
+    "mask_path": "datasets/test/masks/nat_tes_034_mask.png",
+    "domain": "Natural Scene",
+    "domain_idx": 4,
+    "label": 0,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split": "test"
+  },
+  {
+    "id": "nat_tes_035",
+    "image_path": "datasets/test/images/nat_tes_035.png",
+    "mask_path": "datasets/test/masks/nat_tes_035_mask.png",
+    "domain": "Natural Scene",
+    "domain_idx": 4,
+    "label": 1,
+    "bbox": [
+      0.2969,
+      0.2969,
+      0.6484,
+      0.5977
+    ],
+    "split": "test"
+  },
+  {
+    "id": "nat_tes_036",
+    "image_path": "datasets/test/images/nat_tes_036.png",
+    "mask_path": "datasets/test/masks/nat_tes_036_mask.png",
+    "domain": "Natural Scene",
+    "domain_idx": 4,
+    "label": 0,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split": "test"
+  },
+  {
+    "id": "nat_tes_037",
+    "image_path": "datasets/test/images/nat_tes_037.png",
+    "mask_path": "datasets/test/masks/nat_tes_037_mask.png",
+    "domain": "Natural Scene",
+    "domain_idx": 4,
+    "label": 1,
+    "bbox": [
+      0.2969,
+      0.2969,
+      0.6484,
+      0.5977
+    ],
+    "split": "test"
+  },
+  {
+    "id": "nat_tes_038",
+    "image_path": "datasets/test/images/nat_tes_038.png",
+    "mask_path": "datasets/test/masks/nat_tes_038_mask.png",
+    "domain": "Natural Scene",
+    "domain_idx": 4,
+    "label": 0,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split": "test"
+  },
+  {
+    "id": "nat_tes_039",
+    "image_path": "datasets/test/images/nat_tes_039.png",
+    "mask_path": "datasets/test/masks/nat_tes_039_mask.png",
+    "domain": "Natural Scene",
+    "domain_idx": 4,
+    "label": 1,
+    "bbox": [
+      0.2969,
+      0.2969,
+      0.6484,
+      0.5977
+    ],
+    "split": "test"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "generation_id": "real_sat_val_028",
+  "domain": "Satellite Terrain",
+  "operation": "authentic",
+  "label": 0,
+  "is_manipulated": false,
+  "bounding_box": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "seed": 2028,
+  "provenance": "AUTHENTIC BENCHMARK CAPTURE"
+}

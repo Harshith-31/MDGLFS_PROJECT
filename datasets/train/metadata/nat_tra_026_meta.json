@@ -1,0 +1,15 @@
+{
+  "generation_id": "real_nat_tra_026",
+  "domain": "Natural Scene",
+  "operation": "authentic",
+  "label": 0,
+  "is_manipulated": false,
+  "bounding_box": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "seed": 3026,
+  "provenance": "AUTHENTIC BENCHMARK CAPTURE"
+}

@@ -1,0 +1,15 @@
+{
+  "generation_id": "real_reg_val_032",
+  "domain": "Regular Out-of-Domain",
+  "operation": "authentic",
+  "label": 0,
+  "is_manipulated": false,
+  "bounding_box": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "seed": 2532,
+  "provenance": "AUTHENTIC BENCHMARK CAPTURE"
+}
