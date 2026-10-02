@@ -86,5 +86,57 @@
 
 ### Open Issues / Next Steps:
 - Phase 1 complete and fully verified.
-- Ready for Phase 2: Public benchmarks and baseline implementations (E6, E7, E8).
+- Proceeding with Phase 2.
+
+---
+
+## Phase 2: Public Benchmarks & Baselines
+**Date:** 2026-10-02  
+**Status:** Completed  
+
+### Actions Executed:
+1. **Benchmark Datasets & Taxonomy (`docs/DATASETS.md`, `data/prepare_datasets.py`, `data/splits/domain_splits.json` - E6):**
+   - Formalized Track A (Standard Public Benchmarks: CASIA, Columbia, NIST16, COVERAGE, DEFACED) and Track B (Controlled Multi-Domain Physics Protocol: 13 operations across Face, Medical, Satellite, Document, Natural).
+   - Documented dataset licenses, access URLs, ethical protocols, and image counts.
+   - Built deterministic split generator partitioning 140 train, 30 val, 30 test, and 6 real-world benchmark cases with zero leakage across splits.
+2. **Unified Dataset Loaders (`src/eval/datasets/loaders.py`):**
+   - Implemented `load_manifest_split` for loading partition splits from disk.
+   - Implemented `generate_controlled_protocol_samples` for deterministic multi-domain physics tamper synthesis.
+   - Implemented `load_real_world_benchmark_samples` for 6 public real-world test cases.
+3. **Runnable Baselines (`src/baselines/` - E7):**
+   - Built `BaseForensicBaseline` standardized abstract base class.
+   - Built `UNetBaseline` (PyTorch multi-scale U-Net with skip connections).
+   - Built `ELABaseline` (Error Level Analysis residual detector).
+   - Built `SRMBaseline` (Spatial Rich Model high-frequency residual filtering).
+   - Built `PublishedBaselineWrapper` and `get_all_published_baselines()` for literature baselines (ManTra-Net, MVSS-Net, PSCC-Net, CAT-Net, TruFor) with explicit citations and transparent "NOT RUN (Weights Not Downloaded)" handling.
+   - Unit tests created in `tests/new_eval/test_baselines.py` (4/4 passing).
+4. **Main Benchmark Evaluation & Table Generation (`scripts/paper/generate_main_results.py` - E8):**
+   - Executed unified benchmark evaluation across all 49 test samples comparing MD-DGFLS (Strict Cache-DISABLED) vs Standard U-Net, ELA, and SRM.
+   - Computed 95% bootstrap confidence intervals (B=1,000 resamples).
+   - Performed paired Wilcoxon signed-rank significance tests.
+   - Generated `results/main_results_table.csv`, `results/main_results_table.tex`, and `results/main_results_summary.json`.
+5. **Regression Gate Execution:**
+   - Ran `PYTHONPATH=. python3 -m unittest discover tests` -> 42/42 tests passing.
+   - Ran `PYTHONPATH=. python3 tests/verify_all_domains.py` -> 13/13 operations verified.
+   - Cryptographic manifest verification: 1,872 files checked, 0 drift detected.
+
+### Files Created:
+- `docs/DATASETS.md`
+- `data/prepare_datasets.py`
+- `data/splits/domain_splits.json`
+- `src/eval/datasets/loaders.py`
+- `src/baselines/base.py`
+- `src/baselines/unet_baseline.py`
+- `src/baselines/ela_baseline.py`
+- `src/baselines/srm_baseline.py`
+- `src/baselines/published_wrappers.py`
+- `tests/new_eval/test_baselines.py`
+- `scripts/paper/generate_main_results.py`
+- `results/main_results_table.csv`
+- `results/main_results_table.tex`
+- `results/main_results_summary.json`
+
+### Open Issues / Next Steps:
+- Phase 2 complete. Ready for Phase 3 (Ablations & Router Study: E9, E10, E11).
+
 

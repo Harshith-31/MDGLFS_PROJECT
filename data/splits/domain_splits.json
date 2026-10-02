@@ -1,0 +1,2866 @@
+{
+  "metadata": {
+    "created": "2026-10-02",
+    "version": "3.4-eval",
+    "leakage_prevention": "Strict subject and source isolation enforced."
+  },
+  "domains": [
+    "Face",
+    "Medical Radiograph",
+    "Satellite Terrain",
+    "Regular Out-of-Domain",
+    "Natural Scene"
+  ],
+  "splits": {
+    "train": [
+      {
+        "id": "fac_tra_000",
+        "image_path": "datasets/train/images/fac_tra_000.png",
+        "mask_path": "datasets/train/masks/fac_tra_000_mask.png",
+        "domain": "Face",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "fac_tra_001",
+        "image_path": "datasets/train/images/fac_tra_001.png",
+        "mask_path": "datasets/train/masks/fac_tra_001_mask.png",
+        "domain": "Face",
+        "label": 1,
+        "bbox": [
+          0.3906,
+          0.1094,
+          0.582,
+          0.2852
+        ],
+        "split": "train"
+      },
+      {
+        "id": "fac_tra_002",
+        "image_path": "datasets/train/images/fac_tra_002.png",
+        "mask_path": "datasets/train/masks/fac_tra_002_mask.png",
+        "domain": "Face",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "fac_tra_003",
+        "image_path": "datasets/train/images/fac_tra_003.png",
+        "mask_path": "datasets/train/masks/fac_tra_003_mask.png",
+        "domain": "Face",
+        "label": 1,
+        "bbox": [
+          0.2617,
+          0.25,
+          0.7305,
+          0.7031
+        ],
+        "split": "train"
+      },
+      {
+        "id": "fac_tra_004",
+        "image_path": "datasets/train/images/fac_tra_004.png",
+        "mask_path": "datasets/train/masks/fac_tra_004_mask.png",
+        "domain": "Face",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "fac_tra_005",
+        "image_path": "datasets/train/images/fac_tra_005.png",
+        "mask_path": "datasets/train/masks/fac_tra_005_mask.png",
+        "domain": "Face",
+        "label": 1,
+        "bbox": [
+          0.3906,
+          0.0742,
+          0.5352,
+          0.2031
+        ],
+        "split": "train"
+      },
+      {
+        "id": "fac_tra_006",
+        "image_path": "datasets/train/images/fac_tra_006.png",
+        "mask_path": "datasets/train/masks/fac_tra_006_mask.png",
+        "domain": "Face",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "fac_tra_007",
+        "image_path": "datasets/train/images/fac_tra_007.png",
+        "mask_path": "datasets/train/masks/fac_tra_007_mask.png",
+        "domain": "Face",
+        "label": 1,
+        "bbox": [
+          0.3906,
+          0.1094,
+          0.582,
+          0.2852
+        ],
+        "split": "train"
+      },
+      {
+        "id": "fac_tra_008",
+        "image_path": "datasets/train/images/fac_tra_008.png",
+        "mask_path": "datasets/train/masks/fac_tra_008_mask.png",
+        "domain": "Face",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "fac_tra_009",
+        "image_path": "datasets/train/images/fac_tra_009.png",
+        "mask_path": "datasets/train/masks/fac_tra_009_mask.png",
+        "domain": "Face",
+        "label": 1,
+        "bbox": [
+          0.2617,
+          0.25,
+          0.7305,
+          0.7031
+        ],
+        "split": "train"
+      },
+      {
+        "id": "fac_tra_010",
+        "image_path": "datasets/train/images/fac_tra_010.png",
+        "mask_path": "datasets/train/masks/fac_tra_010_mask.png",
+        "domain": "Face",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "fac_tra_011",
+        "image_path": "datasets/train/images/fac_tra_011.png",
+        "mask_path": "datasets/train/masks/fac_tra_011_mask.png",
+        "domain": "Face",
+        "label": 1,
+        "bbox": [
+          0.3906,
+          0.0742,
+          0.5352,
+          0.2031
+        ],
+        "split": "train"
+      },
+      {
+        "id": "fac_tra_012",
+        "image_path": "datasets/train/images/fac_tra_012.png",
+        "mask_path": "datasets/train/masks/fac_tra_012_mask.png",
+        "domain": "Face",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "fac_tra_013",
+        "image_path": "datasets/train/images/fac_tra_013.png",
+        "mask_path": "datasets/train/masks/fac_tra_013_mask.png",
+        "domain": "Face",
+        "label": 1,
+        "bbox": [
+          0.3906,
+          0.1094,
+          0.582,
+          0.2852
+        ],
+        "split": "train"
+      },
+      {
+        "id": "fac_tra_014",
+        "image_path": "datasets/train/images/fac_tra_014.png",
+        "mask_path": "datasets/train/masks/fac_tra_014_mask.png",
+        "domain": "Face",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "fac_tra_015",
+        "image_path": "datasets/train/images/fac_tra_015.png",
+        "mask_path": "datasets/train/masks/fac_tra_015_mask.png",
+        "domain": "Face",
+        "label": 1,
+        "bbox": [
+          0.2617,
+          0.25,
+          0.7305,
+          0.7031
+        ],
+        "split": "train"
+      },
+      {
+        "id": "fac_tra_016",
+        "image_path": "datasets/train/images/fac_tra_016.png",
+        "mask_path": "datasets/train/masks/fac_tra_016_mask.png",
+        "domain": "Face",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "fac_tra_017",
+        "image_path": "datasets/train/images/fac_tra_017.png",
+        "mask_path": "datasets/train/masks/fac_tra_017_mask.png",
+        "domain": "Face",
+        "label": 1,
+        "bbox": [
+          0.3906,
+          0.0742,
+          0.5352,
+          0.2031
+        ],
+        "split": "train"
+      },
+      {
+        "id": "fac_tra_018",
+        "image_path": "datasets/train/images/fac_tra_018.png",
+        "mask_path": "datasets/train/masks/fac_tra_018_mask.png",
+        "domain": "Face",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "fac_tra_019",
+        "image_path": "datasets/train/images/fac_tra_019.png",
+        "mask_path": "datasets/train/masks/fac_tra_019_mask.png",
+        "domain": "Face",
+        "label": 1,
+        "bbox": [
+          0.3906,
+          0.1094,
+          0.582,
+          0.2852
+        ],
+        "split": "train"
+      },
+      {
+        "id": "fac_tra_020",
+        "image_path": "datasets/train/images/fac_tra_020.png",
+        "mask_path": "datasets/train/masks/fac_tra_020_mask.png",
+        "domain": "Face",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "fac_tra_021",
+        "image_path": "datasets/train/images/fac_tra_021.png",
+        "mask_path": "datasets/train/masks/fac_tra_021_mask.png",
+        "domain": "Face",
+        "label": 1,
+        "bbox": [
+          0.2617,
+          0.25,
+          0.7305,
+          0.7031
+        ],
+        "split": "train"
+      },
+      {
+        "id": "fac_tra_022",
+        "image_path": "datasets/train/images/fac_tra_022.png",
+        "mask_path": "datasets/train/masks/fac_tra_022_mask.png",
+        "domain": "Face",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "fac_tra_023",
+        "image_path": "datasets/train/images/fac_tra_023.png",
+        "mask_path": "datasets/train/masks/fac_tra_023_mask.png",
+        "domain": "Face",
+        "label": 1,
+        "bbox": [
+          0.3906,
+          0.0742,
+          0.5352,
+          0.2031
+        ],
+        "split": "train"
+      },
+      {
+        "id": "fac_tra_024",
+        "image_path": "datasets/train/images/fac_tra_024.png",
+        "mask_path": "datasets/train/masks/fac_tra_024_mask.png",
+        "domain": "Face",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "fac_tra_025",
+        "image_path": "datasets/train/images/fac_tra_025.png",
+        "mask_path": "datasets/train/masks/fac_tra_025_mask.png",
+        "domain": "Face",
+        "label": 1,
+        "bbox": [
+          0.3906,
+          0.1094,
+          0.582,
+          0.2852
+        ],
+        "split": "train"
+      },
+      {
+        "id": "fac_tra_026",
+        "image_path": "datasets/train/images/fac_tra_026.png",
+        "mask_path": "datasets/train/masks/fac_tra_026_mask.png",
+        "domain": "Face",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "fac_tra_027",
+        "image_path": "datasets/train/images/fac_tra_027.png",
+        "mask_path": "datasets/train/masks/fac_tra_027_mask.png",
+        "domain": "Face",
+        "label": 1,
+        "bbox": [
+          0.2617,
+          0.25,
+          0.7305,
+          0.7031
+        ],
+        "split": "train"
+      },
+      {
+        "id": "med_tra_000",
+        "image_path": "datasets/train/images/med_tra_000.png",
+        "mask_path": "datasets/train/masks/med_tra_000_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "med_tra_001",
+        "image_path": "datasets/train/images/med_tra_001.png",
+        "mask_path": "datasets/train/masks/med_tra_001_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 1,
+        "bbox": [
+          0.3438,
+          0.3828,
+          0.4922,
+          0.5312
+        ],
+        "split": "train"
+      },
+      {
+        "id": "med_tra_002",
+        "image_path": "datasets/train/images/med_tra_002.png",
+        "mask_path": "datasets/train/masks/med_tra_002_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "med_tra_003",
+        "image_path": "datasets/train/images/med_tra_003.png",
+        "mask_path": "datasets/train/masks/med_tra_003_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 1,
+        "bbox": [
+          0.3438,
+          0.3828,
+          0.4922,
+          0.5312
+        ],
+        "split": "train"
+      },
+      {
+        "id": "med_tra_004",
+        "image_path": "datasets/train/images/med_tra_004.png",
+        "mask_path": "datasets/train/masks/med_tra_004_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "med_tra_005",
+        "image_path": "datasets/train/images/med_tra_005.png",
+        "mask_path": "datasets/train/masks/med_tra_005_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 1,
+        "bbox": [
+          0.3438,
+          0.3828,
+          0.4922,
+          0.5312
+        ],
+        "split": "train"
+      },
+      {
+        "id": "med_tra_006",
+        "image_path": "datasets/train/images/med_tra_006.png",
+        "mask_path": "datasets/train/masks/med_tra_006_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "med_tra_007",
+        "image_path": "datasets/train/images/med_tra_007.png",
+        "mask_path": "datasets/train/masks/med_tra_007_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 1,
+        "bbox": [
+          0.3438,
+          0.3828,
+          0.4922,
+          0.5312
+        ],
+        "split": "train"
+      },
+      {
+        "id": "med_tra_008",
+        "image_path": "datasets/train/images/med_tra_008.png",
+        "mask_path": "datasets/train/masks/med_tra_008_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "med_tra_009",
+        "image_path": "datasets/train/images/med_tra_009.png",
+        "mask_path": "datasets/train/masks/med_tra_009_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 1,
+        "bbox": [
+          0.3438,
+          0.3828,
+          0.4922,
+          0.5312
+        ],
+        "split": "train"
+      },
+      {
+        "id": "med_tra_010",
+        "image_path": "datasets/train/images/med_tra_010.png",
+        "mask_path": "datasets/train/masks/med_tra_010_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "med_tra_011",
+        "image_path": "datasets/train/images/med_tra_011.png",
+        "mask_path": "datasets/train/masks/med_tra_011_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 1,
+        "bbox": [
+          0.3438,
+          0.3828,
+          0.4922,
+          0.5312
+        ],
+        "split": "train"
+      },
+      {
+        "id": "med_tra_012",
+        "image_path": "datasets/train/images/med_tra_012.png",
+        "mask_path": "datasets/train/masks/med_tra_012_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "med_tra_013",
+        "image_path": "datasets/train/images/med_tra_013.png",
+        "mask_path": "datasets/train/masks/med_tra_013_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 1,
+        "bbox": [
+          0.3438,
+          0.3828,
+          0.4922,
+          0.5312
+        ],
+        "split": "train"
+      },
+      {
+        "id": "med_tra_014",
+        "image_path": "datasets/train/images/med_tra_014.png",
+        "mask_path": "datasets/train/masks/med_tra_014_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "med_tra_015",
+        "image_path": "datasets/train/images/med_tra_015.png",
+        "mask_path": "datasets/train/masks/med_tra_015_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 1,
+        "bbox": [
+          0.3438,
+          0.3828,
+          0.4922,
+          0.5312
+        ],
+        "split": "train"
+      },
+      {
+        "id": "med_tra_016",
+        "image_path": "datasets/train/images/med_tra_016.png",
+        "mask_path": "datasets/train/masks/med_tra_016_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "med_tra_017",
+        "image_path": "datasets/train/images/med_tra_017.png",
+        "mask_path": "datasets/train/masks/med_tra_017_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 1,
+        "bbox": [
+          0.3438,
+          0.3828,
+          0.4922,
+          0.5312
+        ],
+        "split": "train"
+      },
+      {
+        "id": "med_tra_018",
+        "image_path": "datasets/train/images/med_tra_018.png",
+        "mask_path": "datasets/train/masks/med_tra_018_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "med_tra_019",
+        "image_path": "datasets/train/images/med_tra_019.png",
+        "mask_path": "datasets/train/masks/med_tra_019_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 1,
+        "bbox": [
+          0.3438,
+          0.3828,
+          0.4922,
+          0.5312
+        ],
+        "split": "train"
+      },
+      {
+        "id": "med_tra_020",
+        "image_path": "datasets/train/images/med_tra_020.png",
+        "mask_path": "datasets/train/masks/med_tra_020_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "med_tra_021",
+        "image_path": "datasets/train/images/med_tra_021.png",
+        "mask_path": "datasets/train/masks/med_tra_021_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 1,
+        "bbox": [
+          0.3438,
+          0.3828,
+          0.4922,
+          0.5312
+        ],
+        "split": "train"
+      },
+      {
+        "id": "med_tra_022",
+        "image_path": "datasets/train/images/med_tra_022.png",
+        "mask_path": "datasets/train/masks/med_tra_022_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "med_tra_023",
+        "image_path": "datasets/train/images/med_tra_023.png",
+        "mask_path": "datasets/train/masks/med_tra_023_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 1,
+        "bbox": [
+          0.3438,
+          0.3828,
+          0.4922,
+          0.5312
+        ],
+        "split": "train"
+      },
+      {
+        "id": "med_tra_024",
+        "image_path": "datasets/train/images/med_tra_024.png",
+        "mask_path": "datasets/train/masks/med_tra_024_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "med_tra_025",
+        "image_path": "datasets/train/images/med_tra_025.png",
+        "mask_path": "datasets/train/masks/med_tra_025_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 1,
+        "bbox": [
+          0.3438,
+          0.3828,
+          0.4922,
+          0.5312
+        ],
+        "split": "train"
+      },
+      {
+        "id": "med_tra_026",
+        "image_path": "datasets/train/images/med_tra_026.png",
+        "mask_path": "datasets/train/masks/med_tra_026_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "med_tra_027",
+        "image_path": "datasets/train/images/med_tra_027.png",
+        "mask_path": "datasets/train/masks/med_tra_027_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 1,
+        "bbox": [
+          0.3438,
+          0.3828,
+          0.4922,
+          0.5312
+        ],
+        "split": "train"
+      },
+      {
+        "id": "sat_tra_000",
+        "image_path": "datasets/train/images/sat_tra_000.png",
+        "mask_path": "datasets/train/masks/sat_tra_000_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "sat_tra_001",
+        "image_path": "datasets/train/images/sat_tra_001.png",
+        "mask_path": "datasets/train/masks/sat_tra_001_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 1,
+        "bbox": [
+          0.2773,
+          0.418,
+          0.7188,
+          0.5781
+        ],
+        "split": "train"
+      },
+      {
+        "id": "sat_tra_002",
+        "image_path": "datasets/train/images/sat_tra_002.png",
+        "mask_path": "datasets/train/masks/sat_tra_002_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "sat_tra_003",
+        "image_path": "datasets/train/images/sat_tra_003.png",
+        "mask_path": "datasets/train/masks/sat_tra_003_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 1,
+        "bbox": [
+          0.2773,
+          0.418,
+          0.7188,
+          0.5781
+        ],
+        "split": "train"
+      },
+      {
+        "id": "sat_tra_004",
+        "image_path": "datasets/train/images/sat_tra_004.png",
+        "mask_path": "datasets/train/masks/sat_tra_004_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "sat_tra_005",
+        "image_path": "datasets/train/images/sat_tra_005.png",
+        "mask_path": "datasets/train/masks/sat_tra_005_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 1,
+        "bbox": [
+          0.2773,
+          0.418,
+          0.7188,
+          0.5781
+        ],
+        "split": "train"
+      },
+      {
+        "id": "sat_tra_006",
+        "image_path": "datasets/train/images/sat_tra_006.png",
+        "mask_path": "datasets/train/masks/sat_tra_006_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "sat_tra_007",
+        "image_path": "datasets/train/images/sat_tra_007.png",
+        "mask_path": "datasets/train/masks/sat_tra_007_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 1,
+        "bbox": [
+          0.2773,
+          0.418,
+          0.7188,
+          0.5781
+        ],
+        "split": "train"
+      },
+      {
+        "id": "sat_tra_008",
+        "image_path": "datasets/train/images/sat_tra_008.png",
+        "mask_path": "datasets/train/masks/sat_tra_008_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "sat_tra_009",
+        "image_path": "datasets/train/images/sat_tra_009.png",
+        "mask_path": "datasets/train/masks/sat_tra_009_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 1,
+        "bbox": [
+          0.2773,
+          0.418,
+          0.7188,
+          0.5781
+        ],
+        "split": "train"
+      },
+      {
+        "id": "sat_tra_010",
+        "image_path": "datasets/train/images/sat_tra_010.png",
+        "mask_path": "datasets/train/masks/sat_tra_010_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "sat_tra_011",
+        "image_path": "datasets/train/images/sat_tra_011.png",
+        "mask_path": "datasets/train/masks/sat_tra_011_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 1,
+        "bbox": [
+          0.2773,
+          0.418,
+          0.7188,
+          0.5781
+        ],
+        "split": "train"
+      },
+      {
+        "id": "sat_tra_012",
+        "image_path": "datasets/train/images/sat_tra_012.png",
+        "mask_path": "datasets/train/masks/sat_tra_012_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "sat_tra_013",
+        "image_path": "datasets/train/images/sat_tra_013.png",
+        "mask_path": "datasets/train/masks/sat_tra_013_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 1,
+        "bbox": [
+          0.2773,
+          0.418,
+          0.7188,
+          0.5781
+        ],
+        "split": "train"
+      },
+      {
+        "id": "sat_tra_014",
+        "image_path": "datasets/train/images/sat_tra_014.png",
+        "mask_path": "datasets/train/masks/sat_tra_014_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "sat_tra_015",
+        "image_path": "datasets/train/images/sat_tra_015.png",
+        "mask_path": "datasets/train/masks/sat_tra_015_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 1,
+        "bbox": [
+          0.2773,
+          0.418,
+          0.7188,
+          0.5781
+        ],
+        "split": "train"
+      },
+      {
+        "id": "sat_tra_016",
+        "image_path": "datasets/train/images/sat_tra_016.png",
+        "mask_path": "datasets/train/masks/sat_tra_016_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "sat_tra_017",
+        "image_path": "datasets/train/images/sat_tra_017.png",
+        "mask_path": "datasets/train/masks/sat_tra_017_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 1,
+        "bbox": [
+          0.2773,
+          0.418,
+          0.7188,
+          0.5781
+        ],
+        "split": "train"
+      },
+      {
+        "id": "sat_tra_018",
+        "image_path": "datasets/train/images/sat_tra_018.png",
+        "mask_path": "datasets/train/masks/sat_tra_018_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "sat_tra_019",
+        "image_path": "datasets/train/images/sat_tra_019.png",
+        "mask_path": "datasets/train/masks/sat_tra_019_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 1,
+        "bbox": [
+          0.2773,
+          0.418,
+          0.7188,
+          0.5781
+        ],
+        "split": "train"
+      },
+      {
+        "id": "sat_tra_020",
+        "image_path": "datasets/train/images/sat_tra_020.png",
+        "mask_path": "datasets/train/masks/sat_tra_020_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "sat_tra_021",
+        "image_path": "datasets/train/images/sat_tra_021.png",
+        "mask_path": "datasets/train/masks/sat_tra_021_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 1,
+        "bbox": [
+          0.2773,
+          0.418,
+          0.7188,
+          0.5781
+        ],
+        "split": "train"
+      },
+      {
+        "id": "sat_tra_022",
+        "image_path": "datasets/train/images/sat_tra_022.png",
+        "mask_path": "datasets/train/masks/sat_tra_022_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "sat_tra_023",
+        "image_path": "datasets/train/images/sat_tra_023.png",
+        "mask_path": "datasets/train/masks/sat_tra_023_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 1,
+        "bbox": [
+          0.2773,
+          0.418,
+          0.7188,
+          0.5781
+        ],
+        "split": "train"
+      },
+      {
+        "id": "sat_tra_024",
+        "image_path": "datasets/train/images/sat_tra_024.png",
+        "mask_path": "datasets/train/masks/sat_tra_024_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "sat_tra_025",
+        "image_path": "datasets/train/images/sat_tra_025.png",
+        "mask_path": "datasets/train/masks/sat_tra_025_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 1,
+        "bbox": [
+          0.2773,
+          0.418,
+          0.7188,
+          0.5781
+        ],
+        "split": "train"
+      },
+      {
+        "id": "sat_tra_026",
+        "image_path": "datasets/train/images/sat_tra_026.png",
+        "mask_path": "datasets/train/masks/sat_tra_026_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "sat_tra_027",
+        "image_path": "datasets/train/images/sat_tra_027.png",
+        "mask_path": "datasets/train/masks/sat_tra_027_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 1,
+        "bbox": [
+          0.2773,
+          0.418,
+          0.7188,
+          0.5781
+        ],
+        "split": "train"
+      },
+      {
+        "id": "reg_tra_000",
+        "image_path": "datasets/train/images/reg_tra_000.png",
+        "mask_path": "datasets/train/masks/reg_tra_000_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "reg_tra_001",
+        "image_path": "datasets/train/images/reg_tra_001.png",
+        "mask_path": "datasets/train/masks/reg_tra_001_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 1,
+        "bbox": [
+          0.3477,
+          0.3477,
+          0.6484,
+          0.5469
+        ],
+        "split": "train"
+      },
+      {
+        "id": "reg_tra_002",
+        "image_path": "datasets/train/images/reg_tra_002.png",
+        "mask_path": "datasets/train/masks/reg_tra_002_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "reg_tra_003",
+        "image_path": "datasets/train/images/reg_tra_003.png",
+        "mask_path": "datasets/train/masks/reg_tra_003_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 1,
+        "bbox": [
+          0.3477,
+          0.3477,
+          0.6484,
+          0.5469
+        ],
+        "split": "train"
+      },
+      {
+        "id": "reg_tra_004",
+        "image_path": "datasets/train/images/reg_tra_004.png",
+        "mask_path": "datasets/train/masks/reg_tra_004_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "reg_tra_005",
+        "image_path": "datasets/train/images/reg_tra_005.png",
+        "mask_path": "datasets/train/masks/reg_tra_005_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 1,
+        "bbox": [
+          0.3477,
+          0.3477,
+          0.6484,
+          0.5469
+        ],
+        "split": "train"
+      },
+      {
+        "id": "reg_tra_006",
+        "image_path": "datasets/train/images/reg_tra_006.png",
+        "mask_path": "datasets/train/masks/reg_tra_006_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "reg_tra_007",
+        "image_path": "datasets/train/images/reg_tra_007.png",
+        "mask_path": "datasets/train/masks/reg_tra_007_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 1,
+        "bbox": [
+          0.3477,
+          0.3477,
+          0.6484,
+          0.5469
+        ],
+        "split": "train"
+      },
+      {
+        "id": "reg_tra_008",
+        "image_path": "datasets/train/images/reg_tra_008.png",
+        "mask_path": "datasets/train/masks/reg_tra_008_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "reg_tra_009",
+        "image_path": "datasets/train/images/reg_tra_009.png",
+        "mask_path": "datasets/train/masks/reg_tra_009_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 1,
+        "bbox": [
+          0.3477,
+          0.3477,
+          0.6484,
+          0.5469
+        ],
+        "split": "train"
+      },
+      {
+        "id": "reg_tra_010",
+        "image_path": "datasets/train/images/reg_tra_010.png",
+        "mask_path": "datasets/train/masks/reg_tra_010_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "reg_tra_011",
+        "image_path": "datasets/train/images/reg_tra_011.png",
+        "mask_path": "datasets/train/masks/reg_tra_011_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 1,
+        "bbox": [
+          0.3477,
+          0.3477,
+          0.6484,
+          0.5469
+        ],
+        "split": "train"
+      },
+      {
+        "id": "reg_tra_012",
+        "image_path": "datasets/train/images/reg_tra_012.png",
+        "mask_path": "datasets/train/masks/reg_tra_012_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "reg_tra_013",
+        "image_path": "datasets/train/images/reg_tra_013.png",
+        "mask_path": "datasets/train/masks/reg_tra_013_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 1,
+        "bbox": [
+          0.3477,
+          0.3477,
+          0.6484,
+          0.5469
+        ],
+        "split": "train"
+      },
+      {
+        "id": "reg_tra_014",
+        "image_path": "datasets/train/images/reg_tra_014.png",
+        "mask_path": "datasets/train/masks/reg_tra_014_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "reg_tra_015",
+        "image_path": "datasets/train/images/reg_tra_015.png",
+        "mask_path": "datasets/train/masks/reg_tra_015_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 1,
+        "bbox": [
+          0.3477,
+          0.3477,
+          0.6484,
+          0.5469
+        ],
+        "split": "train"
+      },
+      {
+        "id": "reg_tra_016",
+        "image_path": "datasets/train/images/reg_tra_016.png",
+        "mask_path": "datasets/train/masks/reg_tra_016_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "reg_tra_017",
+        "image_path": "datasets/train/images/reg_tra_017.png",
+        "mask_path": "datasets/train/masks/reg_tra_017_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 1,
+        "bbox": [
+          0.3477,
+          0.3477,
+          0.6484,
+          0.5469
+        ],
+        "split": "train"
+      },
+      {
+        "id": "reg_tra_018",
+        "image_path": "datasets/train/images/reg_tra_018.png",
+        "mask_path": "datasets/train/masks/reg_tra_018_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "reg_tra_019",
+        "image_path": "datasets/train/images/reg_tra_019.png",
+        "mask_path": "datasets/train/masks/reg_tra_019_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 1,
+        "bbox": [
+          0.3477,
+          0.3477,
+          0.6484,
+          0.5469
+        ],
+        "split": "train"
+      },
+      {
+        "id": "reg_tra_020",
+        "image_path": "datasets/train/images/reg_tra_020.png",
+        "mask_path": "datasets/train/masks/reg_tra_020_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "reg_tra_021",
+        "image_path": "datasets/train/images/reg_tra_021.png",
+        "mask_path": "datasets/train/masks/reg_tra_021_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 1,
+        "bbox": [
+          0.3477,
+          0.3477,
+          0.6484,
+          0.5469
+        ],
+        "split": "train"
+      },
+      {
+        "id": "reg_tra_022",
+        "image_path": "datasets/train/images/reg_tra_022.png",
+        "mask_path": "datasets/train/masks/reg_tra_022_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "reg_tra_023",
+        "image_path": "datasets/train/images/reg_tra_023.png",
+        "mask_path": "datasets/train/masks/reg_tra_023_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 1,
+        "bbox": [
+          0.3477,
+          0.3477,
+          0.6484,
+          0.5469
+        ],
+        "split": "train"
+      },
+      {
+        "id": "reg_tra_024",
+        "image_path": "datasets/train/images/reg_tra_024.png",
+        "mask_path": "datasets/train/masks/reg_tra_024_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "reg_tra_025",
+        "image_path": "datasets/train/images/reg_tra_025.png",
+        "mask_path": "datasets/train/masks/reg_tra_025_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 1,
+        "bbox": [
+          0.3477,
+          0.3477,
+          0.6484,
+          0.5469
+        ],
+        "split": "train"
+      },
+      {
+        "id": "reg_tra_026",
+        "image_path": "datasets/train/images/reg_tra_026.png",
+        "mask_path": "datasets/train/masks/reg_tra_026_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "reg_tra_027",
+        "image_path": "datasets/train/images/reg_tra_027.png",
+        "mask_path": "datasets/train/masks/reg_tra_027_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 1,
+        "bbox": [
+          0.3477,
+          0.3477,
+          0.6484,
+          0.5469
+        ],
+        "split": "train"
+      },
+      {
+        "id": "nat_tra_000",
+        "image_path": "datasets/train/images/nat_tra_000.png",
+        "mask_path": "datasets/train/masks/nat_tra_000_mask.png",
+        "domain": "Natural Scene",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "nat_tra_001",
+        "image_path": "datasets/train/images/nat_tra_001.png",
+        "mask_path": "datasets/train/masks/nat_tra_001_mask.png",
+        "domain": "Natural Scene",
+        "label": 1,
+        "bbox": [
+          0.2969,
+          0.2969,
+          0.6484,
+          0.5977
+        ],
+        "split": "train"
+      },
+      {
+        "id": "nat_tra_002",
+        "image_path": "datasets/train/images/nat_tra_002.png",
+        "mask_path": "datasets/train/masks/nat_tra_002_mask.png",
+        "domain": "Natural Scene",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "nat_tra_003",
+        "image_path": "datasets/train/images/nat_tra_003.png",
+        "mask_path": "datasets/train/masks/nat_tra_003_mask.png",
+        "domain": "Natural Scene",
+        "label": 1,
+        "bbox": [
+          0.2969,
+          0.2969,
+          0.6484,
+          0.5977
+        ],
+        "split": "train"
+      },
+      {
+        "id": "nat_tra_004",
+        "image_path": "datasets/train/images/nat_tra_004.png",
+        "mask_path": "datasets/train/masks/nat_tra_004_mask.png",
+        "domain": "Natural Scene",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "nat_tra_005",
+        "image_path": "datasets/train/images/nat_tra_005.png",
+        "mask_path": "datasets/train/masks/nat_tra_005_mask.png",
+        "domain": "Natural Scene",
+        "label": 1,
+        "bbox": [
+          0.2969,
+          0.2969,
+          0.6484,
+          0.5977
+        ],
+        "split": "train"
+      },
+      {
+        "id": "nat_tra_006",
+        "image_path": "datasets/train/images/nat_tra_006.png",
+        "mask_path": "datasets/train/masks/nat_tra_006_mask.png",
+        "domain": "Natural Scene",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "nat_tra_007",
+        "image_path": "datasets/train/images/nat_tra_007.png",
+        "mask_path": "datasets/train/masks/nat_tra_007_mask.png",
+        "domain": "Natural Scene",
+        "label": 1,
+        "bbox": [
+          0.2969,
+          0.2969,
+          0.6484,
+          0.5977
+        ],
+        "split": "train"
+      },
+      {
+        "id": "nat_tra_008",
+        "image_path": "datasets/train/images/nat_tra_008.png",
+        "mask_path": "datasets/train/masks/nat_tra_008_mask.png",
+        "domain": "Natural Scene",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "nat_tra_009",
+        "image_path": "datasets/train/images/nat_tra_009.png",
+        "mask_path": "datasets/train/masks/nat_tra_009_mask.png",
+        "domain": "Natural Scene",
+        "label": 1,
+        "bbox": [
+          0.2969,
+          0.2969,
+          0.6484,
+          0.5977
+        ],
+        "split": "train"
+      },
+      {
+        "id": "nat_tra_010",
+        "image_path": "datasets/train/images/nat_tra_010.png",
+        "mask_path": "datasets/train/masks/nat_tra_010_mask.png",
+        "domain": "Natural Scene",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "nat_tra_011",
+        "image_path": "datasets/train/images/nat_tra_011.png",
+        "mask_path": "datasets/train/masks/nat_tra_011_mask.png",
+        "domain": "Natural Scene",
+        "label": 1,
+        "bbox": [
+          0.2969,
+          0.2969,
+          0.6484,
+          0.5977
+        ],
+        "split": "train"
+      },
+      {
+        "id": "nat_tra_012",
+        "image_path": "datasets/train/images/nat_tra_012.png",
+        "mask_path": "datasets/train/masks/nat_tra_012_mask.png",
+        "domain": "Natural Scene",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "nat_tra_013",
+        "image_path": "datasets/train/images/nat_tra_013.png",
+        "mask_path": "datasets/train/masks/nat_tra_013_mask.png",
+        "domain": "Natural Scene",
+        "label": 1,
+        "bbox": [
+          0.2969,
+          0.2969,
+          0.6484,
+          0.5977
+        ],
+        "split": "train"
+      },
+      {
+        "id": "nat_tra_014",
+        "image_path": "datasets/train/images/nat_tra_014.png",
+        "mask_path": "datasets/train/masks/nat_tra_014_mask.png",
+        "domain": "Natural Scene",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "nat_tra_015",
+        "image_path": "datasets/train/images/nat_tra_015.png",
+        "mask_path": "datasets/train/masks/nat_tra_015_mask.png",
+        "domain": "Natural Scene",
+        "label": 1,
+        "bbox": [
+          0.2969,
+          0.2969,
+          0.6484,
+          0.5977
+        ],
+        "split": "train"
+      },
+      {
+        "id": "nat_tra_016",
+        "image_path": "datasets/train/images/nat_tra_016.png",
+        "mask_path": "datasets/train/masks/nat_tra_016_mask.png",
+        "domain": "Natural Scene",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "nat_tra_017",
+        "image_path": "datasets/train/images/nat_tra_017.png",
+        "mask_path": "datasets/train/masks/nat_tra_017_mask.png",
+        "domain": "Natural Scene",
+        "label": 1,
+        "bbox": [
+          0.2969,
+          0.2969,
+          0.6484,
+          0.5977
+        ],
+        "split": "train"
+      },
+      {
+        "id": "nat_tra_018",
+        "image_path": "datasets/train/images/nat_tra_018.png",
+        "mask_path": "datasets/train/masks/nat_tra_018_mask.png",
+        "domain": "Natural Scene",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "nat_tra_019",
+        "image_path": "datasets/train/images/nat_tra_019.png",
+        "mask_path": "datasets/train/masks/nat_tra_019_mask.png",
+        "domain": "Natural Scene",
+        "label": 1,
+        "bbox": [
+          0.2969,
+          0.2969,
+          0.6484,
+          0.5977
+        ],
+        "split": "train"
+      },
+      {
+        "id": "nat_tra_020",
+        "image_path": "datasets/train/images/nat_tra_020.png",
+        "mask_path": "datasets/train/masks/nat_tra_020_mask.png",
+        "domain": "Natural Scene",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "nat_tra_021",
+        "image_path": "datasets/train/images/nat_tra_021.png",
+        "mask_path": "datasets/train/masks/nat_tra_021_mask.png",
+        "domain": "Natural Scene",
+        "label": 1,
+        "bbox": [
+          0.2969,
+          0.2969,
+          0.6484,
+          0.5977
+        ],
+        "split": "train"
+      },
+      {
+        "id": "nat_tra_022",
+        "image_path": "datasets/train/images/nat_tra_022.png",
+        "mask_path": "datasets/train/masks/nat_tra_022_mask.png",
+        "domain": "Natural Scene",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "nat_tra_023",
+        "image_path": "datasets/train/images/nat_tra_023.png",
+        "mask_path": "datasets/train/masks/nat_tra_023_mask.png",
+        "domain": "Natural Scene",
+        "label": 1,
+        "bbox": [
+          0.2969,
+          0.2969,
+          0.6484,
+          0.5977
+        ],
+        "split": "train"
+      },
+      {
+        "id": "nat_tra_024",
+        "image_path": "datasets/train/images/nat_tra_024.png",
+        "mask_path": "datasets/train/masks/nat_tra_024_mask.png",
+        "domain": "Natural Scene",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "nat_tra_025",
+        "image_path": "datasets/train/images/nat_tra_025.png",
+        "mask_path": "datasets/train/masks/nat_tra_025_mask.png",
+        "domain": "Natural Scene",
+        "label": 1,
+        "bbox": [
+          0.2969,
+          0.2969,
+          0.6484,
+          0.5977
+        ],
+        "split": "train"
+      },
+      {
+        "id": "nat_tra_026",
+        "image_path": "datasets/train/images/nat_tra_026.png",
+        "mask_path": "datasets/train/masks/nat_tra_026_mask.png",
+        "domain": "Natural Scene",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "train"
+      },
+      {
+        "id": "nat_tra_027",
+        "image_path": "datasets/train/images/nat_tra_027.png",
+        "mask_path": "datasets/train/masks/nat_tra_027_mask.png",
+        "domain": "Natural Scene",
+        "label": 1,
+        "bbox": [
+          0.2969,
+          0.2969,
+          0.6484,
+          0.5977
+        ],
+        "split": "train"
+      }
+    ],
+    "validation": [
+      {
+        "id": "fac_val_028",
+        "image_path": "datasets/validation/images/fac_val_028.png",
+        "mask_path": "datasets/validation/masks/fac_val_028_mask.png",
+        "domain": "Face",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "validation"
+      },
+      {
+        "id": "fac_val_029",
+        "image_path": "datasets/validation/images/fac_val_029.png",
+        "mask_path": "datasets/validation/masks/fac_val_029_mask.png",
+        "domain": "Face",
+        "label": 1,
+        "bbox": [
+          0.3906,
+          0.0742,
+          0.5352,
+          0.2031
+        ],
+        "split": "validation"
+      },
+      {
+        "id": "fac_val_030",
+        "image_path": "datasets/validation/images/fac_val_030.png",
+        "mask_path": "datasets/validation/masks/fac_val_030_mask.png",
+        "domain": "Face",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "validation"
+      },
+      {
+        "id": "fac_val_031",
+        "image_path": "datasets/validation/images/fac_val_031.png",
+        "mask_path": "datasets/validation/masks/fac_val_031_mask.png",
+        "domain": "Face",
+        "label": 1,
+        "bbox": [
+          0.3906,
+          0.1094,
+          0.582,
+          0.2852
+        ],
+        "split": "validation"
+      },
+      {
+        "id": "fac_val_032",
+        "image_path": "datasets/validation/images/fac_val_032.png",
+        "mask_path": "datasets/validation/masks/fac_val_032_mask.png",
+        "domain": "Face",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "validation"
+      },
+      {
+        "id": "fac_val_033",
+        "image_path": "datasets/validation/images/fac_val_033.png",
+        "mask_path": "datasets/validation/masks/fac_val_033_mask.png",
+        "domain": "Face",
+        "label": 1,
+        "bbox": [
+          0.2617,
+          0.25,
+          0.7305,
+          0.7031
+        ],
+        "split": "validation"
+      },
+      {
+        "id": "med_val_028",
+        "image_path": "datasets/validation/images/med_val_028.png",
+        "mask_path": "datasets/validation/masks/med_val_028_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "validation"
+      },
+      {
+        "id": "med_val_029",
+        "image_path": "datasets/validation/images/med_val_029.png",
+        "mask_path": "datasets/validation/masks/med_val_029_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 1,
+        "bbox": [
+          0.3438,
+          0.3828,
+          0.4922,
+          0.5312
+        ],
+        "split": "validation"
+      },
+      {
+        "id": "med_val_030",
+        "image_path": "datasets/validation/images/med_val_030.png",
+        "mask_path": "datasets/validation/masks/med_val_030_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "validation"
+      },
+      {
+        "id": "med_val_031",
+        "image_path": "datasets/validation/images/med_val_031.png",
+        "mask_path": "datasets/validation/masks/med_val_031_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 1,
+        "bbox": [
+          0.3438,
+          0.3828,
+          0.4922,
+          0.5312
+        ],
+        "split": "validation"
+      },
+      {
+        "id": "med_val_032",
+        "image_path": "datasets/validation/images/med_val_032.png",
+        "mask_path": "datasets/validation/masks/med_val_032_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "validation"
+      },
+      {
+        "id": "med_val_033",
+        "image_path": "datasets/validation/images/med_val_033.png",
+        "mask_path": "datasets/validation/masks/med_val_033_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 1,
+        "bbox": [
+          0.3438,
+          0.3828,
+          0.4922,
+          0.5312
+        ],
+        "split": "validation"
+      },
+      {
+        "id": "sat_val_028",
+        "image_path": "datasets/validation/images/sat_val_028.png",
+        "mask_path": "datasets/validation/masks/sat_val_028_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "validation"
+      },
+      {
+        "id": "sat_val_029",
+        "image_path": "datasets/validation/images/sat_val_029.png",
+        "mask_path": "datasets/validation/masks/sat_val_029_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 1,
+        "bbox": [
+          0.2773,
+          0.418,
+          0.7188,
+          0.5781
+        ],
+        "split": "validation"
+      },
+      {
+        "id": "sat_val_030",
+        "image_path": "datasets/validation/images/sat_val_030.png",
+        "mask_path": "datasets/validation/masks/sat_val_030_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "validation"
+      },
+      {
+        "id": "sat_val_031",
+        "image_path": "datasets/validation/images/sat_val_031.png",
+        "mask_path": "datasets/validation/masks/sat_val_031_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 1,
+        "bbox": [
+          0.2773,
+          0.418,
+          0.7188,
+          0.5781
+        ],
+        "split": "validation"
+      },
+      {
+        "id": "sat_val_032",
+        "image_path": "datasets/validation/images/sat_val_032.png",
+        "mask_path": "datasets/validation/masks/sat_val_032_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "validation"
+      },
+      {
+        "id": "sat_val_033",
+        "image_path": "datasets/validation/images/sat_val_033.png",
+        "mask_path": "datasets/validation/masks/sat_val_033_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 1,
+        "bbox": [
+          0.2773,
+          0.418,
+          0.7188,
+          0.5781
+        ],
+        "split": "validation"
+      },
+      {
+        "id": "reg_val_028",
+        "image_path": "datasets/validation/images/reg_val_028.png",
+        "mask_path": "datasets/validation/masks/reg_val_028_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "validation"
+      },
+      {
+        "id": "reg_val_029",
+        "image_path": "datasets/validation/images/reg_val_029.png",
+        "mask_path": "datasets/validation/masks/reg_val_029_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 1,
+        "bbox": [
+          0.3477,
+          0.3477,
+          0.6484,
+          0.5469
+        ],
+        "split": "validation"
+      },
+      {
+        "id": "reg_val_030",
+        "image_path": "datasets/validation/images/reg_val_030.png",
+        "mask_path": "datasets/validation/masks/reg_val_030_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "validation"
+      },
+      {
+        "id": "reg_val_031",
+        "image_path": "datasets/validation/images/reg_val_031.png",
+        "mask_path": "datasets/validation/masks/reg_val_031_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 1,
+        "bbox": [
+          0.3477,
+          0.3477,
+          0.6484,
+          0.5469
+        ],
+        "split": "validation"
+      },
+      {
+        "id": "reg_val_032",
+        "image_path": "datasets/validation/images/reg_val_032.png",
+        "mask_path": "datasets/validation/masks/reg_val_032_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "validation"
+      },
+      {
+        "id": "reg_val_033",
+        "image_path": "datasets/validation/images/reg_val_033.png",
+        "mask_path": "datasets/validation/masks/reg_val_033_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 1,
+        "bbox": [
+          0.3477,
+          0.3477,
+          0.6484,
+          0.5469
+        ],
+        "split": "validation"
+      },
+      {
+        "id": "nat_val_028",
+        "image_path": "datasets/validation/images/nat_val_028.png",
+        "mask_path": "datasets/validation/masks/nat_val_028_mask.png",
+        "domain": "Natural Scene",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "validation"
+      },
+      {
+        "id": "nat_val_029",
+        "image_path": "datasets/validation/images/nat_val_029.png",
+        "mask_path": "datasets/validation/masks/nat_val_029_mask.png",
+        "domain": "Natural Scene",
+        "label": 1,
+        "bbox": [
+          0.2969,
+          0.2969,
+          0.6484,
+          0.5977
+        ],
+        "split": "validation"
+      },
+      {
+        "id": "nat_val_030",
+        "image_path": "datasets/validation/images/nat_val_030.png",
+        "mask_path": "datasets/validation/masks/nat_val_030_mask.png",
+        "domain": "Natural Scene",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "validation"
+      },
+      {
+        "id": "nat_val_031",
+        "image_path": "datasets/validation/images/nat_val_031.png",
+        "mask_path": "datasets/validation/masks/nat_val_031_mask.png",
+        "domain": "Natural Scene",
+        "label": 1,
+        "bbox": [
+          0.2969,
+          0.2969,
+          0.6484,
+          0.5977
+        ],
+        "split": "validation"
+      },
+      {
+        "id": "nat_val_032",
+        "image_path": "datasets/validation/images/nat_val_032.png",
+        "mask_path": "datasets/validation/masks/nat_val_032_mask.png",
+        "domain": "Natural Scene",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "validation"
+      },
+      {
+        "id": "nat_val_033",
+        "image_path": "datasets/validation/images/nat_val_033.png",
+        "mask_path": "datasets/validation/masks/nat_val_033_mask.png",
+        "domain": "Natural Scene",
+        "label": 1,
+        "bbox": [
+          0.2969,
+          0.2969,
+          0.6484,
+          0.5977
+        ],
+        "split": "validation"
+      }
+    ],
+    "test": [
+      {
+        "id": "fac_tes_034",
+        "image_path": "datasets/test/images/fac_tes_034.png",
+        "mask_path": "datasets/test/masks/fac_tes_034_mask.png",
+        "domain": "Face",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "test"
+      },
+      {
+        "id": "fac_tes_035",
+        "image_path": "datasets/test/images/fac_tes_035.png",
+        "mask_path": "datasets/test/masks/fac_tes_035_mask.png",
+        "domain": "Face",
+        "label": 1,
+        "bbox": [
+          0.3906,
+          0.0742,
+          0.5352,
+          0.2031
+        ],
+        "split": "test"
+      },
+      {
+        "id": "fac_tes_036",
+        "image_path": "datasets/test/images/fac_tes_036.png",
+        "mask_path": "datasets/test/masks/fac_tes_036_mask.png",
+        "domain": "Face",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "test"
+      },
+      {
+        "id": "fac_tes_037",
+        "image_path": "datasets/test/images/fac_tes_037.png",
+        "mask_path": "datasets/test/masks/fac_tes_037_mask.png",
+        "domain": "Face",
+        "label": 1,
+        "bbox": [
+          0.3906,
+          0.1094,
+          0.582,
+          0.2852
+        ],
+        "split": "test"
+      },
+      {
+        "id": "fac_tes_038",
+        "image_path": "datasets/test/images/fac_tes_038.png",
+        "mask_path": "datasets/test/masks/fac_tes_038_mask.png",
+        "domain": "Face",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "test"
+      },
+      {
+        "id": "fac_tes_039",
+        "image_path": "datasets/test/images/fac_tes_039.png",
+        "mask_path": "datasets/test/masks/fac_tes_039_mask.png",
+        "domain": "Face",
+        "label": 1,
+        "bbox": [
+          0.2617,
+          0.25,
+          0.7305,
+          0.7031
+        ],
+        "split": "test"
+      },
+      {
+        "id": "med_tes_034",
+        "image_path": "datasets/test/images/med_tes_034.png",
+        "mask_path": "datasets/test/masks/med_tes_034_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "test"
+      },
+      {
+        "id": "med_tes_035",
+        "image_path": "datasets/test/images/med_tes_035.png",
+        "mask_path": "datasets/test/masks/med_tes_035_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 1,
+        "bbox": [
+          0.3438,
+          0.3828,
+          0.4922,
+          0.5312
+        ],
+        "split": "test"
+      },
+      {
+        "id": "med_tes_036",
+        "image_path": "datasets/test/images/med_tes_036.png",
+        "mask_path": "datasets/test/masks/med_tes_036_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "test"
+      },
+      {
+        "id": "med_tes_037",
+        "image_path": "datasets/test/images/med_tes_037.png",
+        "mask_path": "datasets/test/masks/med_tes_037_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 1,
+        "bbox": [
+          0.3438,
+          0.3828,
+          0.4922,
+          0.5312
+        ],
+        "split": "test"
+      },
+      {
+        "id": "med_tes_038",
+        "image_path": "datasets/test/images/med_tes_038.png",
+        "mask_path": "datasets/test/masks/med_tes_038_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "test"
+      },
+      {
+        "id": "med_tes_039",
+        "image_path": "datasets/test/images/med_tes_039.png",
+        "mask_path": "datasets/test/masks/med_tes_039_mask.png",
+        "domain": "Medical Radiograph",
+        "label": 1,
+        "bbox": [
+          0.3438,
+          0.3828,
+          0.4922,
+          0.5312
+        ],
+        "split": "test"
+      },
+      {
+        "id": "sat_tes_034",
+        "image_path": "datasets/test/images/sat_tes_034.png",
+        "mask_path": "datasets/test/masks/sat_tes_034_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "test"
+      },
+      {
+        "id": "sat_tes_035",
+        "image_path": "datasets/test/images/sat_tes_035.png",
+        "mask_path": "datasets/test/masks/sat_tes_035_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 1,
+        "bbox": [
+          0.2773,
+          0.418,
+          0.7188,
+          0.5781
+        ],
+        "split": "test"
+      },
+      {
+        "id": "sat_tes_036",
+        "image_path": "datasets/test/images/sat_tes_036.png",
+        "mask_path": "datasets/test/masks/sat_tes_036_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "test"
+      },
+      {
+        "id": "sat_tes_037",
+        "image_path": "datasets/test/images/sat_tes_037.png",
+        "mask_path": "datasets/test/masks/sat_tes_037_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 1,
+        "bbox": [
+          0.2773,
+          0.418,
+          0.7188,
+          0.5781
+        ],
+        "split": "test"
+      },
+      {
+        "id": "sat_tes_038",
+        "image_path": "datasets/test/images/sat_tes_038.png",
+        "mask_path": "datasets/test/masks/sat_tes_038_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "test"
+      },
+      {
+        "id": "sat_tes_039",
+        "image_path": "datasets/test/images/sat_tes_039.png",
+        "mask_path": "datasets/test/masks/sat_tes_039_mask.png",
+        "domain": "Satellite Terrain",
+        "label": 1,
+        "bbox": [
+          0.2773,
+          0.418,
+          0.7188,
+          0.5781
+        ],
+        "split": "test"
+      },
+      {
+        "id": "reg_tes_034",
+        "image_path": "datasets/test/images/reg_tes_034.png",
+        "mask_path": "datasets/test/masks/reg_tes_034_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "test"
+      },
+      {
+        "id": "reg_tes_035",
+        "image_path": "datasets/test/images/reg_tes_035.png",
+        "mask_path": "datasets/test/masks/reg_tes_035_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 1,
+        "bbox": [
+          0.3477,
+          0.3477,
+          0.6484,
+          0.5469
+        ],
+        "split": "test"
+      },
+      {
+        "id": "reg_tes_036",
+        "image_path": "datasets/test/images/reg_tes_036.png",
+        "mask_path": "datasets/test/masks/reg_tes_036_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "test"
+      },
+      {
+        "id": "reg_tes_037",
+        "image_path": "datasets/test/images/reg_tes_037.png",
+        "mask_path": "datasets/test/masks/reg_tes_037_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 1,
+        "bbox": [
+          0.3477,
+          0.3477,
+          0.6484,
+          0.5469
+        ],
+        "split": "test"
+      },
+      {
+        "id": "reg_tes_038",
+        "image_path": "datasets/test/images/reg_tes_038.png",
+        "mask_path": "datasets/test/masks/reg_tes_038_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "test"
+      },
+      {
+        "id": "reg_tes_039",
+        "image_path": "datasets/test/images/reg_tes_039.png",
+        "mask_path": "datasets/test/masks/reg_tes_039_mask.png",
+        "domain": "Regular Out-of-Domain",
+        "label": 1,
+        "bbox": [
+          0.3477,
+          0.3477,
+          0.6484,
+          0.5469
+        ],
+        "split": "test"
+      },
+      {
+        "id": "nat_tes_034",
+        "image_path": "datasets/test/images/nat_tes_034.png",
+        "mask_path": "datasets/test/masks/nat_tes_034_mask.png",
+        "domain": "Natural Scene",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "test"
+      },
+      {
+        "id": "nat_tes_035",
+        "image_path": "datasets/test/images/nat_tes_035.png",
+        "mask_path": "datasets/test/masks/nat_tes_035_mask.png",
+        "domain": "Natural Scene",
+        "label": 1,
+        "bbox": [
+          0.2969,
+          0.2969,
+          0.6484,
+          0.5977
+        ],
+        "split": "test"
+      },
+      {
+        "id": "nat_tes_036",
+        "image_path": "datasets/test/images/nat_tes_036.png",
+        "mask_path": "datasets/test/masks/nat_tes_036_mask.png",
+        "domain": "Natural Scene",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "test"
+      },
+      {
+        "id": "nat_tes_037",
+        "image_path": "datasets/test/images/nat_tes_037.png",
+        "mask_path": "datasets/test/masks/nat_tes_037_mask.png",
+        "domain": "Natural Scene",
+        "label": 1,
+        "bbox": [
+          0.2969,
+          0.2969,
+          0.6484,
+          0.5977
+        ],
+        "split": "test"
+      },
+      {
+        "id": "nat_tes_038",
+        "image_path": "datasets/test/images/nat_tes_038.png",
+        "mask_path": "datasets/test/masks/nat_tes_038_mask.png",
+        "domain": "Natural Scene",
+        "label": 0,
+        "bbox": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "split": "test"
+      },
+      {
+        "id": "nat_tes_039",
+        "image_path": "datasets/test/images/nat_tes_039.png",
+        "mask_path": "datasets/test/masks/nat_tes_039_mask.png",
+        "domain": "Natural Scene",
+        "label": 1,
+        "bbox": [
+          0.2969,
+          0.2969,
+          0.6484,
+          0.5977
+        ],
+        "split": "test"
+      }
+    ],
+    "real_world_benchmarks": [
+      {
+        "id": "face_morph",
+        "domain": "Face",
+        "op": "facial_features",
+        "path": "datasets/real_world_benchmarks/real_face_jacinda.jpg",
+        "desc": "Jacinda Ardern Rhinoplasty Sculpt"
+      },
+      {
+        "id": "med_carcinoma",
+        "domain": "Medical Radiograph",
+        "op": "carcinoma",
+        "path": "datasets/real_world_benchmarks/real_xray_normal.jpg",
+        "desc": "PA Chest X-Ray Solitary Carcinoma"
+      },
+      {
+        "id": "sat_airbase",
+        "domain": "Satellite Terrain",
+        "op": "airbase",
+        "path": "datasets/real_world_benchmarks/real_sat_airport.jpg",
+        "desc": "NASA Gaza Airport Parallel Tactical Apron"
+      },
+      {
+        "id": "doc_tamper",
+        "domain": "Regular Out-of-Domain",
+        "op": "tamper",
+        "path": "datasets/real_world_benchmarks/real_doc_invoice.jpg",
+        "desc": "Bergeron 1950s Invoice Numeric Alteration"
+      },
+      {
+        "id": "doc_stamp",
+        "domain": "Regular Out-of-Domain",
+        "op": "stamp",
+        "path": "datasets/real_world_benchmarks/real_doc_invoice.jpg",
+        "desc": "Bergeron Official Notary Red Seal Forgery"
+      },
+      {
+        "id": "nat_drone",
+        "domain": "Natural Scene",
+        "op": "insertion",
+        "path": "datasets/real_world_benchmarks/real_nat_landscape.jpg",
+        "desc": "Moraine Lake Rockies Aerial Drone Insertion"
+      }
+    ]
+  }
+}
