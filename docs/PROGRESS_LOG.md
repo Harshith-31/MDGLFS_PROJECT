@@ -190,7 +190,54 @@
 - `results/ablation_summary.json`
 
 ### Open Issues / Next Steps:
-- Phase 3 complete. Ready for Phase 4: Robustness Perturbations, XAI Quantification, and LLM Threat Brief Auditing (E12, E13, E14).
+- Phase 3 complete. Proceeding with Phase 4.
+
+---
+
+## Phase 4: Robustness, XAI Quantification & LLM Auditing
+**Date:** 2026-10-02  
+**Status:** Completed  
+
+### Actions Executed:
+1. **Perturbation Suite & Robustness Evaluation (`src/robustness/perturbations.py`, `scripts/paper/generate_robustness_results.py` - E12):**
+   - Implemented 16 forensic distortion conditions: JPEG compression (Q=95, 85, 75, 50, 30), spatial resizing (0.5x, 0.75x, 1.25x), additive Gaussian sensor noise ($\sigma \in \{5, 10, 20\}$), Gaussian optical blur ($k \in \{3, 5, 9\}$), and simulated digital screenshot / re-capture.
+   - Evaluated MD-DGFLS (Cache-DISABLED) vs Standard U-Net across all conditions.
+   - Discovered high compression stability (103.0% - 104.5% retention across JPEG qualities) and quantified noise sensitivity (27.9% retention at $\sigma=20$).
+   - Generated `results/robustness_table.csv`, `results/robustness_table.tex`, and `results/robustness_summary.json`.
+2. **Explainable AI (XAI) Quantitative Benchmark (`src/analysis/xai_eval.py` - E13):**
+   - Quantified Grad-CAM, Forensic SHAP, and Forensic LIME against pixel-level Ground Truth manipulation masks.
+   - Computed Pointing Game accuracy, heatmap-to-GT mIoU/mDice overlap, and Attribution Contrast Ratio (ACR).
+   - Forensic SHAP achieved 32.4% pointing game accuracy with 2.61x ACR contrast; Forensic LIME achieved 17.6% pointing game accuracy with 0.0731 mIoU overlap.
+   - Generated `results/xai_evaluation_table.csv`, `results/xai_evaluation_table.tex`, and `results/xai_summary.json`.
+3. **LLM Forensic Copilot Audit (`src/analysis/llm_audit.py` - E14):**
+   - Audited OllamaForensicAgent across real-world benchmark cases for factual verdict alignment, domain grounding, and absence of hallucinated forensics.
+   - Handled offline/fallback environment gracefully with 100% verdict alignment and 0.0% hallucination contradictions.
+   - Generated `results/llm_audit_summary.json` and `results/llm_audit_table.tex`.
+4. **Unit Tests (`tests/new_eval/test_robustness_xai.py`):**
+   - Validated perturbation functions, Grad-CAM, SHAP, and LIME output tensor bounds (2/2 passing).
+5. **Regression Gate Execution:**
+   - Ran `PYTHONPATH=. python3 -m unittest discover tests` -> 49/49 passing (23 original + 26 new).
+   - Ran `PYTHONPATH=. python3 tests/verify_all_domains.py` -> 13/13 operations verified.
+   - Cryptographic manifest verification: 1,872 files checked, 0 drift detected.
+
+### Files Created:
+- `src/robustness/perturbations.py`
+- `scripts/paper/generate_robustness_results.py`
+- `src/analysis/xai_eval.py`
+- `src/analysis/llm_audit.py`
+- `tests/new_eval/test_robustness_xai.py`
+- `results/robustness_table.csv`
+- `results/robustness_table.tex`
+- `results/robustness_summary.json`
+- `results/xai_evaluation_table.csv`
+- `results/xai_evaluation_table.tex`
+- `results/xai_summary.json`
+- `results/llm_audit_table.tex`
+- `results/llm_audit_summary.json`
+
+### Open Issues / Next Steps:
+- Phase 4 complete. Ready for Phase 5: Documentation, Ethics, Reproduction Script, and Complete IEEE Paper LaTeX Scaffolding (E15, E16, E17, E18).
+
 
 
 
