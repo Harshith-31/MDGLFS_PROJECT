@@ -137,6 +137,60 @@
 - `results/main_results_summary.json`
 
 ### Open Issues / Next Steps:
-- Phase 2 complete. Ready for Phase 3 (Ablations & Router Study: E9, E10, E11).
+- Phase 2 complete. Proceeding with Phase 3.
+
+---
+
+## Phase 3: Ablations & Router Study
+**Date:** 2026-10-02  
+**Status:** Completed  
+
+### Actions Executed:
+1. **Ablation Wrappers & Execution Core (`src/ablation/wrappers.py` - E9):**
+   - Implemented non-invasive wrappers without modifying existing models:
+     - `w/o CDFAM`: Cross-domain feature alignment disabled.
+     - `w/o ARCC`: Dynamic entropy temperature scaling disabled ($T = 1.0$ fixed).
+     - `w/o MEFCN`: Multi-expert edge consensus disabled.
+     - `w/o HLRN`: Hierarchical localization refinement network disabled.
+     - `Single Shared Expert`: Unified `GeneralDetector` applied across all 5 domains.
+     - `Heuristics-Only Router`: Layer 1 physical/structural heuristics only.
+     - `ViT-Only Router`: Layer 2 Vision Transformer only.
+   - Built unit tests in `tests/new_eval/test_ablations.py` (5/5 passing).
+2. **Router Evaluation & Calibration Study (`src/analysis/router_eval.py` - E10):**
+   - Evaluated hybrid routing accuracy (87.76% overall routing accuracy).
+   - Computed Expected Calibration Error (ECE) for ARCC vs uncalibrated baseline ($ECE_{\text{raw}} = 0.0933$, $ECE_{\text{ARCC}} = 0.1218$).
+   - Computed physical heuristic parameter sensitivity sweeps for HSV saturation std, Laplacian edge variance, and document dominant color bins.
+   - Generated `results/router_confusion_matrix.tex` and `results/router_evaluation_summary.json`.
+3. **Cross-Domain Generalization Study (`src/analysis/cross_domain.py` - E11):**
+   - Evaluated $5 \times 5$ cross-domain transfer matrix across all expert detectors.
+   - Quantified domain specialization and catastrophic out-of-domain degradation (e.g. Satellite expert mIoU drops from 56.3% on Satellite to 0.8% on Medical with 81.7% FPR).
+   - Generated `results/cross_domain_matrix.csv`, `results/cross_domain_matrix.tex`, and `results/cross_domain_summary.json`.
+4. **Master Ablation Suite Evaluation (`scripts/paper/generate_ablation_results.py`):**
+   - Evaluated all 8 architecture configurations with bootstrap 95% CIs and Wilcoxon signed-rank significance tests.
+   - Discovered that collapsing domain experts into a Single Shared Expert causes severe, statistically significant degradation ($\Delta\text{mIoU} = -0.1848$, $p = 1.94 \times 10^{-3} < 0.01$).
+   - Generated `results/ablation_table.csv`, `results/ablation_table.tex`, and `results/ablation_summary.json`.
+5. **Regression Gate Execution:**
+   - Ran `PYTHONPATH=. python3 -m unittest discover tests` -> 47/47 passing (23 original + 24 new).
+   - Ran `PYTHONPATH=. python3 tests/verify_all_domains.py` -> 13/13 operations verified.
+   - Cryptographic manifest verification: 1,872 files checked, 0 drift detected.
+
+### Files Created:
+- `src/ablation/wrappers.py`
+- `tests/new_eval/test_ablations.py`
+- `src/analysis/router_eval.py`
+- `src/analysis/cross_domain.py`
+- `scripts/paper/generate_ablation_results.py`
+- `results/router_confusion_matrix.tex`
+- `results/router_evaluation_summary.json`
+- `results/cross_domain_matrix.csv`
+- `results/cross_domain_matrix.tex`
+- `results/cross_domain_summary.json`
+- `results/ablation_table.csv`
+- `results/ablation_table.tex`
+- `results/ablation_summary.json`
+
+### Open Issues / Next Steps:
+- Phase 3 complete. Ready for Phase 4: Robustness Perturbations, XAI Quantification, and LLM Threat Brief Auditing (E12, E13, E14).
+
 
 

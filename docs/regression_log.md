@@ -125,4 +125,34 @@ Initializing MD-DGFLS ForensicsEngine on: mps
 - **Result:** `Total tracked files checked: 1872. Missing: 0. Mismatches: 0. PERFECT: 0 drift detected against freeze manifest!`
 - **Status:** **ZERO REGRESSION / ZERO DRIFT CONFIRMED.**
 
+---
+
+## Regression Entry 3: Post-Phase 3 Completion
+
+**Timestamp:** 2026-10-02 20:18:45 IST  
+**Git Branch:** `feature/paper-eval-extension`  
+**Phase:** Phase 3 (Ablations & Router Study: Ablation Wrappers, Router Eval, ARCC ECE, 5x5 Cross-Domain Transfer)  
+**Hardware / Device:** Apple Silicon M4 / PyTorch MPS  
+
+### Test Suite 1: Full Unit Test Suite (`unittest discover tests`)
+- **Command:** `PYTHONPATH=. python3 -m unittest discover tests`
+- **Output:** Ran 47 tests (23 original + 24 new in `tests/new_eval/`) in 42.974s -> **OK (47 / 47 Tests Passed)**
+- **Status:** **PASS**
+
+### Test Suite 2: Dedicated Ablation Unit Suite (`unittest tests/new_eval/test_ablations.py`)
+- **Command:** `PYTHONPATH=. python3 -m unittest tests/new_eval/test_ablations.py`
+- **Output:** Ran 5 tests -> **OK (5 / 5 Tests Passed)**
+- **Status:** **PASS**
+
+### Test Suite 3: Multi-Domain Operational Verification (`verify_all_domains.py`)
+- **Command:** `PYTHONPATH=. python3 tests/verify_all_domains.py`
+- **Output:** All 13 operations across Face, Medical, Satellite, Document, Natural -> **OK (13 / 13 Operations Passed)**
+- **Status:** **PASS**
+
+### Cryptographic Manifest Diff Check:
+- **Command:** Re-hashed all 1,872 files against `docs/freeze_manifest.json`
+- **Result:** `Total tracked files checked: 1872. Missing: 0. Mismatches: 0. PERFECT: 0 drift detected against freeze manifest!`
+- **Status:** **ZERO REGRESSION / ZERO DRIFT CONFIRMED.**
+
+
 
