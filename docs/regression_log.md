@@ -66,3 +66,33 @@ Initializing MD-DGFLS ForensicsEngine on: mps
 ### Integrity Verification:
 - **Zero Modifications to Frozen Checkpoints or Source Files:** Verified against `docs/freeze_manifest.json`.
 - **Status:** **CLEAN BASELINE ESTABLISHED.**
+
+---
+
+## Regression Entry 1: Post-Phase 1 Completion
+
+**Timestamp:** 2026-10-02 15:42:00 IST  
+**Git Branch:** `feature/paper-eval-extension`  
+**Phase:** Phase 1 (Evaluation Foundation: Metrics, Statistics, Runner, Logging, Audit)  
+**Hardware / Device:** Apple Silicon M4 / PyTorch MPS  
+
+### Test Suite 1: Full Unit Test Suite (`unittest discover tests`)
+- **Command:** `PYTHONPATH=. python3 -m unittest discover tests`
+- **Output:** Ran 38 tests (23 original + 15 new in `tests/new_eval/`) in 37.166s -> **OK (38 / 38 Tests Passed)**
+- **Status:** **PASS**
+
+### Test Suite 2: Dedicated New Evaluation Suite (`unittest discover tests/new_eval`)
+- **Command:** `PYTHONPATH=. python3 -m unittest discover tests/new_eval`
+- **Output:** Ran 15 tests (7 metrics, 6 statistics, 2 runner) in 8.357s -> **OK (15 / 15 Tests Passed)**
+- **Status:** **PASS**
+
+### Test Suite 3: Multi-Domain Operational Verification (`verify_all_domains.py`)
+- **Command:** `PYTHONPATH=. python3 tests/verify_all_domains.py`
+- **Output:** All 13 operations across Face, Medical, Satellite, Document, Natural -> **OK (13 / 13 Operations Passed)**
+- **Status:** **PASS**
+
+### Cryptographic Manifest Diff Check:
+- **Command:** Re-hashed all 1,872 files against `docs/freeze_manifest.json`
+- **Result:** `PASS: 100% of 1,872 frozen files match manifest exactly.`
+- **Status:** **ZERO REGRESSION / ZERO DRIFT CONFIRMED.**
+
