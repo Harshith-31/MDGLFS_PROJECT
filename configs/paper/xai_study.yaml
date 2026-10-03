@@ -1,0 +1,18 @@
+# MD-DGFLS XAI Quantification Configuration
+experiment_name: "xai_quantification_study"
+description: "Objective evaluation of Grad-CAM, Forensic SHAP, and Forensic LIME against ground truth tamper masks"
+
+methods:
+  - "Grad-CAM"
+  - "Forensic SHAP"
+  - "Forensic LIME"
+
+metrics:
+  pointing_game: true
+  iou_threshold: 0.5
+  dice: true
+  attribution_contrast_ratio: true
+
+output_directory: "results/xai"
+export_latex: "results/xai_evaluation_table.tex"
+export_csv: "results/xai_evaluation_table.csv"

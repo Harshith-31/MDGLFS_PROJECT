@@ -83,6 +83,7 @@ def main():
         ("Full MD-DGFLS (Proposed)", None),
         ("w/o CDFAM", "wo_cdfam"),
         ("w/o ARCC", "wo_arcc"),
+        ("w/o TGHFL", "wo_tghfl"),
         ("w/o MEFCN", "wo_mefcn"),
         ("w/o HLRN", "wo_hlrn"),
         ("Single Shared Expert", "single_shared_model"),

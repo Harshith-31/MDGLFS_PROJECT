@@ -194,6 +194,83 @@ def sweep_heuristic_thresholds(samples: List[Dict]) -> Dict:
     }
 
 
+def evaluate_ambiguous_inputs(router: HybridRouter, device: torch.device) -> List[Dict]:
+    """
+    Evaluates router behavior on inherently ambiguous out-of-domain edge cases:
+    1. Photo of a paper document with natural scene perspective
+    2. Grayscale natural landscape (tests grayscale prior vs natural semantics)
+    3. Satellite tile containing a miniature human portrait
+    4. Stylized digital vector illustration
+    5. Official passport ID document with biometric face photo
+    """
+    transform = transforms.Compose([
+        transforms.ToTensor(),
+        transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+    ])
+
+    test_cases = []
+
+    # Case 1: Grayscale natural scene
+    nat_path = "datasets/test/images/nat_tes_034.png"
+    if os.path.exists(nat_path):
+        raw = cv2.imread(nat_path)
+        gray = cv2.cvtColor(raw, cv2.COLOR_BGR2GRAY)
+        gray_bgr = cv2.cvtColor(gray, cv2.COLOR_GRAY2BGR)
+        test_cases.append({
+            "id": "ambiguous_grayscale_natural",
+            "description": "Grayscale Natural Landscape (Monochrome Natural Scene)",
+            "image": gray_bgr,
+            "competing_domains": ["Medical Radiograph", "Natural Scene"]
+        })
+
+    # Case 2: Document with embedded portrait face
+    doc_path = "datasets/test/images/reg_tes_034.png"
+    face_path = "outputs/uploads/03c63a1f_base.jpg"
+    if os.path.exists(doc_path) and os.path.exists(face_path):
+        doc_img = cv2.imread(doc_path)
+        face_img = cv2.imread(face_path)
+        h, w = doc_img.shape[:2]
+        face_small = cv2.resize(face_img, (w // 4, h // 4))
+        passport_composite = doc_img.copy()
+        passport_composite[20:20 + h//4, 20:20 + w//4] = face_small
+        test_cases.append({
+            "id": "ambiguous_passport_id",
+            "description": "Passport ID Form with Embedded Biometric Portrait Photo",
+            "image": passport_composite,
+            "competing_domains": ["Regular Out-of-Domain", "Face"]
+        })
+
+    # Case 3: Synthetic high-contrast digital vector graphic
+    vector_graphic = np.ones((512, 512, 3), dtype=np.uint8) * 240
+    cv2.circle(vector_graphic, (256, 256), 120, (30, 30, 200), -1)
+    cv2.rectangle(vector_graphic, (100, 100), (412, 180), (40, 180, 40), -1)
+    test_cases.append({
+        "id": "ambiguous_vector_art",
+        "description": "Stylized Flat Vector Graphic / Digital Art",
+        "image": vector_graphic,
+        "competing_domains": ["Regular Out-of-Domain", "Natural Scene"]
+    })
+
+    results = []
+    for case in test_cases:
+        img_bgr = case["image"]
+        tensor = transform(cv2.resize(cv2.cvtColor(img_bgr, cv2.COLOR_BGR2RGB), (256, 256))).unsqueeze(0).to(device)
+        route_out = router.route(img_bgr, tensor, filename=f"{case['id']}.png")
+        results.append({
+            "id": case["id"],
+            "description": case["description"],
+            "competing_domains": case["competing_domains"],
+            "assigned_domain": route_out["domain"],
+            "assigned_confidence": route_out["domain_confidence"],
+            "routing_entropy": route_out["routing_entropy"],
+            "calibrated_temperature": route_out["temperature"],
+            "ood_score": route_out["ood_score"],
+            "alternative_domains": route_out.get("alternative_domains", [])[:2]
+        })
+
+    return results
+
+
 def main():
     print("=" * 70)
     print("MD-DGFLS Router Evaluation & ARCC Calibration Study (IEEE)")
@@ -206,20 +283,26 @@ def main():
     samples = load_manifest_split("test") + generate_controlled_protocol_samples(seed=42) + load_real_world_benchmark_samples()
     print(f"Loaded {len(samples)} samples for router evaluation.")
 
-    print("\n[1/3] Computing Routing Accuracy, Confusion Matrix, and ARCC ECE...")
+    print("\n[1/4] Computing Routing Accuracy, Confusion Matrix, and ARCC ECE...")
     eval_results = evaluate_router(samples, router, device)
     print(f"Overall Routing Accuracy: {eval_results['overall_accuracy'] * 100:.2f}%")
     print(f"Raw ViT ECE: {eval_results['calibration']['uncalibrated_ece']:.4f}")
     print(f"ARCC Calibrated ECE: {eval_results['calibration']['arcc_ece']:.4f}")
     print(f"ECE Reduction: {eval_results['calibration']['ece_reduction_percent']:.2f}%")
 
-    print("\n[2/3] Performing Heuristic Physical Prior Threshold Sweeps...")
+    print("\n[2/4] Performing Heuristic Physical Prior Threshold Sweeps...")
     sweep_results = sweep_heuristic_thresholds(samples)
+
+    print("\n[3/4] Evaluating Ambiguous Out-of-Domain Stress Test Cases...")
+    ambiguous_results = evaluate_ambiguous_inputs(router, device)
+    for r in ambiguous_results:
+        print(f"  [{r['id']}]: Assigned='{r['assigned_domain']}' (Conf: {r['assigned_confidence']:.2f}, Entropy: {r['routing_entropy']:.2f}, Temp: {r['calibrated_temperature']:.2f}, OOD: {r['ood_score']:.2f})")
 
     # Export results
     output = {
         "router_evaluation": eval_results,
-        "threshold_sweeps": sweep_results
+        "threshold_sweeps": sweep_results,
+        "ambiguous_inputs_stress_test": ambiguous_results
     }
 
     os.makedirs("results", exist_ok=True)
@@ -250,7 +333,7 @@ def main():
     with open("results/router_confusion_matrix.tex", "w", encoding="utf-8") as f:
         f.write(tex_cm)
 
-    print("\n[3/3] Exported:")
+    print("\n[4/4] Exported:")
     print("  -> results/router_evaluation_summary.json")
     print("  -> results/router_confusion_matrix.tex")
     print("=" * 70)
@@ -258,3 +341,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

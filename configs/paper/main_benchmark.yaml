@@ -1,0 +1,38 @@
+# MD-DGFLS Main Benchmark Configuration
+experiment_name: "main_benchmark_eval"
+description: "Comprehensive cross-domain forensic evaluation comparing MD-DGFLS vs baselines under strict cache-disabled zero-knowledge protocol"
+
+seeds: [42, 0, 1, 2, 3]
+default_seed: 42
+bootstrap_resamples: 1000
+confidence_interval: 0.95
+
+cache_mode: "disabled"
+decision_threshold: 0.5
+
+domains:
+  - "Face"
+  - "Medical Radiograph"
+  - "Satellite Terrain"
+  - "Regular Out-of-Domain"
+  - "Natural Scene"
+
+datasets:
+  track_a_splits_file: "data/splits/domain_splits.json"
+  track_b_protocol_intensity: 0.85
+  real_world_benchmarks: true
+
+models_evaluated:
+  - name: "MD-DGFLS (Ours, Cache-Disabled)"
+    type: "neural_ensemble"
+    cache_disabled: true
+  - name: "Standard U-Net"
+    type: "baseline_neural"
+  - name: "ELA (Error Level Analysis)"
+    type: "baseline_residual"
+  - name: "SRM (Spatial Rich Model)"
+    type: "baseline_steganalysis"
+
+output_directory: "results/main_benchmark"
+export_latex: "results/main_results_table.tex"
+export_csv: "results/main_results_table.csv"

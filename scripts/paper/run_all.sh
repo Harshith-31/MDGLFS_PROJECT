@@ -31,12 +31,16 @@ python3 src/analysis/xai_eval.py
 python3 src/analysis/llm_audit.py
 
 echo ""
-echo "[Step 5/6] Executing Unit Test Suite (Original + New Evaluation Suites)..."
+echo "[Step 5/7] Generating IEEE Publication Figures..."
+MPLCONFIGDIR=/tmp/mpl python3 scripts/paper/generate_figures.py
+
+echo ""
+echo "[Step 6/7] Executing Unit Test Suite (Original + New Evaluation Suites)..."
 python3 -m unittest discover tests
 
 echo ""
-echo "[Step 6/6] Executing 13-Operation Multi-Domain Operational Verification..."
-git restore outputs/reports/audit_dossier.pdf 2>/dev/null || true
+echo "[Step 7/7] Executing 13-Operation Multi-Domain Operational Verification..."
+git restore outputs/ 2>/dev/null || true
 python3 tests/verify_all_domains.py
 
 echo ""

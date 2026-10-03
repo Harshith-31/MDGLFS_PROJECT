@@ -1,0 +1,23 @@
+# MD-DGFLS Router Study Configuration
+experiment_name: "router_calibration_study"
+description: "Evaluation of Hybrid Consensus Router accuracy, confusion matrix, and ARCC dynamic temperature calibration"
+
+domains:
+  - "Face"
+  - "Medical Radiograph"
+  - "Satellite Terrain"
+  - "Regular Out-of-Domain"
+  - "Natural Scene"
+
+calibration:
+  arcc_gamma: 1.5
+  num_ece_bins: 10
+
+threshold_sweeps:
+  saturation_std: [6.0, 9.0, 12.0, 15.0, 18.0]
+  laplacian_var: [300.0, 450.0, 600.0, 750.0, 900.0]
+  dominant_color_bin: [0.15, 0.20, 0.25, 0.30, 0.35]
+
+output_directory: "results/router_study"
+export_latex_confusion: "results/router_confusion_matrix.tex"
+export_summary: "results/router_evaluation_summary.json"

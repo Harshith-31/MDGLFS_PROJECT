@@ -47,7 +47,7 @@ class TestAblationSuite(unittest.TestCase):
         self.assertTrue(0.0 <= res["iou"] <= 1.0)
 
     def test_structural_module_ablations(self):
-        for mode in ["wo_hlrn", "wo_cdfam", "wo_mefcn"]:
+        for mode in ["wo_hlrn", "wo_cdfam", "wo_mefcn", "wo_tghfl"]:
             ablated = AblatedEvaluationRunner(self.runner, mode)
             res = ablated.evaluate_single_image(self.img, self.gt, cache_mode="disabled")
             self.assertEqual(res["ablation"], mode)

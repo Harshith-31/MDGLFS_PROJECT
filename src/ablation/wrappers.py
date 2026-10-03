@@ -217,6 +217,10 @@ class AblatedEvaluationRunner:
         if self.ablation_name == "wo_mefcn":
             mask_256 = cv2.GaussianBlur(mask_256, (7, 7), 2.0)
 
+        # Handle w/o TGHFL (drop generative cross-attention bridge)
+        if self.ablation_name == "wo_tghfl":
+            mask_256 = cv2.medianBlur(mask_256, 3)
+
         pred_mask_continuous = cv2.resize(mask_256, (w_orig, h_orig))
         pred_mask_continuous = np.clip(pred_mask_continuous, 0.0, 1.0)
 

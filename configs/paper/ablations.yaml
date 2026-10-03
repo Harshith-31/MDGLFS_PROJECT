@@ -1,0 +1,41 @@
+# MD-DGFLS Ablation Study Configuration
+experiment_name: "ablation_study"
+description: "Component ablation of CDFAM, ARCC, TGHFL, MEFCN, HLRN, and router configurations"
+
+seeds: [42]
+bootstrap_resamples: 1000
+confidence_interval: 0.95
+cache_mode: "disabled"
+
+configurations:
+  - id: "full_md_dgfls"
+    label: "Full MD-DGFLS (Proposed)"
+    wrapper_mode: null
+  - id: "wo_cdfam"
+    label: "w/o CDFAM"
+    wrapper_mode: "wo_cdfam"
+  - id: "wo_arcc"
+    label: "w/o ARCC"
+    wrapper_mode: "wo_arcc"
+  - id: "wo_tghfl"
+    label: "w/o TGHFL"
+    wrapper_mode: "wo_tghfl"
+  - id: "wo_mefcn"
+    label: "w/o MEFCN"
+    wrapper_mode: "wo_mefcn"
+  - id: "wo_hlrn"
+    label: "w/o HLRN"
+    wrapper_mode: "wo_hlrn"
+  - id: "single_shared_model"
+    label: "Single Shared Expert"
+    wrapper_mode: "single_shared_model"
+  - id: "heuristics_only_router"
+    label: "Heuristics-Only Router"
+    wrapper_mode: "heuristics_only_router"
+  - id: "vit_only_router"
+    label: "ViT-Only Router"
+    wrapper_mode: "vit_only_router"
+
+output_directory: "results/ablations"
+export_latex: "results/ablation_table.tex"
+export_csv: "results/ablation_table.csv"

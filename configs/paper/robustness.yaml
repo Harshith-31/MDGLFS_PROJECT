@@ -1,0 +1,17 @@
+# MD-DGFLS Robustness Study Configuration
+experiment_name: "robustness_perturbation_study"
+description: "Forensic localization degradation analysis under transmission channel distortions, compression, noise, and blur"
+
+cache_mode: "disabled"
+decision_threshold: 0.5
+
+perturbations:
+  jpeg: [95, 85, 75, 50, 30]
+  rescaling: [0.5, 0.75, 1.25]
+  gaussian_noise_sigma: [5.0, 10.0, 20.0]
+  gaussian_blur_ksize: [3, 5, 9]
+  screenshot_simulation: true
+
+output_directory: "results/robustness"
+export_latex: "results/robustness_table.tex"
+export_csv: "results/robustness_table.csv"
