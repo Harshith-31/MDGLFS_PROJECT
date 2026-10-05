@@ -207,6 +207,31 @@ Initializing MD-DGFLS ForensicsEngine on: mps
 - **Result:** `Total tracked files checked: 1872. Missing: 0. Mismatches: 0. PERFECT: 0 drift detected against freeze manifest!`
 - **Status:** **ZERO REGRESSION / ZERO DRIFT CONFIRMED (100% BIT-FOR-BIT INTEGRITY PRESERVED).**
 
+---
+
+## Regression Entry 6: Post-Master Project Handbook PDF Generation
+
+**Timestamp:** 2026-10-05 11:42:00 IST  
+**Git Branch:** `feature/paper-eval-extension`  
+**Phase:** Complete Master Technical & Pedagogical Handbook (`docs/MD_DGFLS_Complete_Project_Master_Document.pdf`)  
+**Hardware / Device:** Apple Silicon M4 / PyTorch MPS  
+
+### Test Suite 1: Full Unit Test Suite (`unittest discover tests`)
+- **Command:** `PYTHONPATH=. python3 -m unittest discover tests`
+- **Output:** Ran 49 tests (23 original + 26 new in `tests/new_eval/`) in 47.771s -> **OK (49 / 49 Tests Passed)**
+- **Status:** **PASS**
+
+### Test Suite 2: Multi-Domain Operational Verification (`verify_all_domains.py`)
+- **Command:** `PYTHONPATH=. python3 tests/verify_all_domains.py`
+- **Output:** All 13 operations across Face, Medical, Satellite, Document, Natural -> **OK (13 / 13 Operations Passed)**
+- **Status:** **PASS**
+
+### Cryptographic Manifest Diff Check:
+- **Command:** Re-hashed all 1,872 files against `docs/freeze_manifest.json`
+- **Result:** `Total tracked files checked: 1872. Missing: 0. Mismatches: 0. PERFECT: 0 drift detected against freeze manifest!`
+- **Status:** **ZERO REGRESSION / ZERO DRIFT CONFIRMED (100% BIT-FOR-BIT INTEGRITY PRESERVED).**
+
+
 
 
 
