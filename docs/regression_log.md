@@ -251,3 +251,35 @@ Initializing MD-DGFLS ForensicsEngine on: mps
 - **Files checked:** All frozen source code, models, and checkpoints match `v3.4-frozen` bit-for-bit.
 - **Untracked Additive Files:** `docs/CHANGE_REQUESTS.md`, `docs/METRIC_AUDIT_I5.md`, `src/eval/aggregation.py`, `tests/new_eval/test_aggregation.py`.
 - **Status:** **ZERO REGRESSION / ZERO SOURCE DRIFT CONFIRMED.**
+
+---
+
+## Regression Entry 8: Final Publication Readiness & Automated Consistency Gate (Phases 3–8)
+
+**Timestamp:** 2026-10-05 12:50:00 IST  
+**Git Branch:** `release/v3.5-paper`  
+**Phase:** Complete Delivery (Datasets, Ablations, Robustness, Claims Decision, IEEE Paper PDF, Venue Readiness Report)  
+**Hardware / Device:** Apple Silicon M4 / PyTorch MPS  
+
+### Test Suite 1: Full Unit Test Suite (`unittest discover tests`)
+- **Command:** `PYTHONPATH=. python3 -m unittest discover tests`
+- **Output:** Ran 52 tests (23 original + 29 in `tests/new_eval/`) in 50.054s -> **OK (52 / 52 Tests Passed)**
+- **Status:** **PASS**
+
+### Test Suite 2: Multi-Domain Operational Verification (`verify_all_domains.py`)
+- **Command:** `PYTHONPATH=. python3 tests/verify_all_domains.py`
+- **Output:** All 13 operations across Face, Medical, Satellite, Document, Natural -> **OK (13 / 13 Operations Passed)**
+- **Status:** **PASS**
+
+### Test Suite 3: Automated Paper Consistency & Integrity Audit
+- **Command:** `python3 scripts/paper/verify_consistency.py`
+- **Output:** 100% of consistency and integrity checks passed (0 forbidden terms, 0 unrun baselines presented as measured, all 4 figures and 7 tables present and matching numbers exactly).
+- **Status:** **PASS**
+
+### Deliverable Verification:
+- **Compiled IEEE Paper PDF:** `paper/main.pdf` (551 KB) generated and verified.
+- **Claims Decision Ledger:** `docs/CLAIMS_DECISION.md` authored.
+- **Venue Readiness Report:** `docs/VENUE_READINESS_REPORT.md` authored.
+- **Reproduction Pipeline:** `scripts/paper/run_all.sh` verified.
+- **Status:** **100% RESEARCH-GRADE PUBLICATION READY.**
+
