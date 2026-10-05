@@ -2,7 +2,7 @@
 
 This guide provides end-to-end instructions for reproducing all benchmark tables, ablations, router evaluations, robustness tests, and explainability experiments for the IEEE conference paper:
 
-> **MD-DGFLS: Multi-Domain Deepfake Generation and Forensic Localization System with Calibrated Routing**
+> **Domain-Aware Routing for Cross-Domain Tampering Localization: An Empirical Multi-Domain Benchmark**
 
 ---
 
@@ -57,7 +57,7 @@ bash scripts/paper/run_all.sh
 | **Phase 4: Robustness Perturbations** | `python3 scripts/paper/generate_robustness_results.py` | `results/robustness_table.tex`, `results/robustness_table.csv` | ~90 seconds |
 | **Phase 4: XAI Interpretability Benchmark**| `python3 src/analysis/xai_eval.py` | `results/xai_evaluation_table.tex`, `results/xai_evaluation_table.csv` | ~60 seconds |
 | **Phase 4: LLM Threat Brief Audit** | `python3 src/analysis/llm_audit.py` | `results/llm_audit_table.tex`, `results/llm_audit_summary.json` | ~8 seconds |
-| **Regression Gate: Unit Test Suite** | `PYTHONPATH=. python3 -m unittest discover tests` | 49 / 49 tests passing | ~48 seconds |
+| **Regression Gate: Unit Test Suite** | `PYTHONPATH=. python3 -m unittest discover tests` | 52 / 52 tests passing | ~48 seconds |
 | **Regression Gate: Operational Suite** | `PYTHONPATH=. python3 tests/verify_all_domains.py` | 13 / 13 operations verified | ~25 seconds |
 
 ---
@@ -75,16 +75,22 @@ All research experiments are driven by declarative YAML configurations located i
 
 ## 6. Compilation of the IEEE Conference Paper
 
-All results tables generated in `results/` are directly imported into `paper/main.tex`:
+The paper can be compiled into a publication PDF in two ways:
 
+### Option A: Standalone Python Builder (Zero LaTeX dependencies required)
+```bash
+python3 scripts/paper/generate_paper_pdf.py
+```
+This generates `paper/main.pdf` (551 KB) formatted to standard IEEE conference double-column layout.
+
+### Option B: Standard LaTeX / Overleaf
+All results tables generated in `results/` are directly imported into `paper/main.tex`:
 ```bash
 cd paper/
-
-# To compile the paper (requires pdflatex / TeX Live or Overleaf):
 pdflatex main.tex
 bibtex main
 pdflatex main.tex
 pdflatex main.tex
 ```
+The LaTeX sources (`paper/main.tex`, `paper/references.bib`, `paper/figures/`) are ready for direct submission to IEEE conference portals or Overleaf.
 
-The resulting `main.pdf` document compiles into a standard IEEE double-column conference paper incorporating all 7 empirical results tables.
