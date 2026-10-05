@@ -281,9 +281,48 @@
 - `paper/references.bib`
 
 ### Overall Project Status:
-- **ALL 5 PHASES COMPLETED AND INDEPENDENTLY VERIFIED.**
-- Full research-grade evaluation extension operational.
-- Zero existing files modified, zero regressions, zero cryptographic manifest drift.
+- Initial extension completed; current milestone focuses on Phase 1 & Phase 2 formal reconciliation and diagnosis.
+
+---
+
+## Phase 1 & 2 Extension: Metric Reconciliation (I5) & Diagnostic Ledger (I1–I4)
+**Date:** 2026-10-05  
+**Git Branch:** `release/v3.5-paper`  
+**Status:** Completed & Regression Verified  
+
+### Actions Executed:
+1. **Metric Aggregation Formalization (`src/eval/aggregation.py` - Task E1 & I5):**
+   - Implemented three distinct forensic evaluation protocols:
+     - `tampered_only`: CVPR/ICCV standard localization on positive manipulation masks ($N=34$).
+     - `all_images_macro`: System-level macro average with clean authentic true-negative score handling ($N=49$).
+     - `dataset_micro`: Dataset-wide pixel pooling ($\sum TP / (\sum TP + \sum FP + \sum FN)$).
+   - Validated against hand-computed toy masks in `tests/new_eval/test_aggregation.py` (3/3 passing).
+2. **Comprehensive Issue I5 Reconciliation Audit (`docs/METRIC_AUDIT_I5.md`):**
+   - Mathematically reconciled Table 10.1 (0.4082) vs. Table 10.2 (0.4364) vs. Fig 10.2 (~0.45): domain hint override (`domain_hint=dom` vs `domain_hint=None`) and its interaction with FaceDetector spatial collapse.
+   - Demystified Standard U-Net identical metric equality ($0.3061$): untrained weights produced all-zero masks, scoring $1.0$ on $15 / 49$ clean authentic images. Under tampered-only localization, Standard U-Net achieves $0.0000$ (0%).
+   - Demystified U-Net collapse to $0.0271$ under perturbations: isolated noise pixels broke clean image true-negative scores ($1.0 \to 0.0$).
+   - Reconciled 16 executed perturbation channels vs. 2 plotted subplots (space constraints in double-column IEEE layout).
+   - Confirmed router accuracy sample size $N=49$ ($43 / 49 = 87.76\%$).
+   - Refuted XAI "mathematical proof" claims: Grad-CAM pointing game is $0.0\%$, SHAP is $32.4\%$, and LIME is $17.6\%$ on $N=34$ tampered samples.
+3. **Diagnostic Investigations & Formal Change Requests (`docs/CHANGE_REQUESTS.md` - Phase 2):**
+   - Diagnosed Issue I1: TGHFL uncalled; CDFAM telemetry-only; ARCC temperature scaling preserves argmax routing.
+   - Diagnosed Issue I2: `w/o MEFCN` scored $+0.0198$ due to synthetic Gaussian blur artifact in wrapper.
+   - Diagnosed Issue I3: ARCC with $\gamma=1.5$ caused severe under-confidence, degrading ECE from $0.0933 \to 0.1218$.
+   - Diagnosed Issue I4: `models/face_detector_best.pth` suffered spatial shortcut collapse to corner coordinates $[219:255, 25:99]$.
+   - Formulated 5 formal Change Requests (CR-01 through CR-05) recommending evidence-driven paper framing rather than destabilizing frozen code.
+4. **Regression Gate Execution:**
+   - Ran `PYTHONPATH=. python3 -m unittest discover tests` -> **52/52 tests passing**.
+   - Ran `PYTHONPATH=. python3 tests/verify_all_domains.py` -> **13/13 operations verified**.
+   - Cryptographic manifest verification: 100% of frozen source code and models match bit-for-bit.
+
+### Files Created:
+- `src/eval/aggregation.py`
+- `tests/new_eval/test_aggregation.py`
+- `docs/METRIC_AUDIT_I5.md`
+- `docs/CHANGE_REQUESTS.md`
+
+### Open Decisions Needed from User:
+- Approval of Change Requests CR-01 through CR-05 in `docs/CHANGE_REQUESTS.md` before advancing to Phase 3.
 
 
 

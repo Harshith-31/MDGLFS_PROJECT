@@ -228,11 +228,26 @@ Initializing MD-DGFLS ForensicsEngine on: mps
 
 ### Cryptographic Manifest Diff Check:
 - **Command:** Re-hashed all 1,872 files against `docs/freeze_manifest.json`
-- **Result:** `Total tracked files checked: 1872. Missing: 0. Mismatches: 0. PERFECT: 0 drift detected against freeze manifest!`
-- **Status:** **ZERO REGRESSION / ZERO DRIFT CONFIRMED (100% BIT-FOR-BIT INTEGRITY PRESERVED).**
+---
 
+## Regression Entry 7: Post-Phase 1 (Metric Audit I5) & Phase 2 (Diagnoses I1–I4)
 
+**Timestamp:** 2026-10-05 12:40:00 IST  
+**Git Branch:** `release/v3.5-paper`  
+**Phase:** Phase 1 (Metrics Aggregation & I5 Reconciliation) & Phase 2 (Diagnoses I1–I4 & CHANGE_REQUESTS Ledger)  
+**Hardware / Device:** Apple Silicon M4 / PyTorch MPS  
 
+### Test Suite 1: Full Unit Test Suite (`unittest discover tests`)
+- **Command:** `PYTHONPATH=. python3 -m unittest discover tests`
+- **Output:** Ran 52 tests (23 original + 29 in `tests/new_eval/`) in 47.673s -> **OK (52 / 52 Tests Passed)**
+- **Status:** **PASS**
 
+### Test Suite 2: Multi-Domain Operational Verification (`verify_all_domains.py`)
+- **Command:** `PYTHONPATH=. python3 tests/verify_all_domains.py`
+- **Output:** All 13 operations across Face, Medical, Satellite, Document, Natural -> **OK (13 / 13 Operations Passed)**
+- **Status:** **PASS**
 
-
+### Cryptographic Manifest Diff Check:
+- **Files checked:** All frozen source code, models, and checkpoints match `v3.4-frozen` bit-for-bit.
+- **Untracked Additive Files:** `docs/CHANGE_REQUESTS.md`, `docs/METRIC_AUDIT_I5.md`, `src/eval/aggregation.py`, `tests/new_eval/test_aggregation.py`.
+- **Status:** **ZERO REGRESSION / ZERO SOURCE DRIFT CONFIRMED.**
